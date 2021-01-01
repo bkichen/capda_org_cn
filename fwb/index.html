@@ -1,0 +1,1293 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>首页 - &#20013;&#22269;&#20892;&#33647;&#20449;&#24687;&#32593;&#95;&#29983;&#29289;&#20892;&#33647;&#44;&#26377;&#26426;&#20892;&#33647;&#44;&#20892;&#33647;&#20215;&#26684;&#44;&#20892;&#33647;&#38144;&#21806;</title>
+<meta http-equiv="keywords" content="">
+<meta http-equiv="description" content="">
+<head>
+<!--[if lt IE 9]>
+<script src="/r/cms/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link href="../r/cms/www/default/css/css.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../r/cms/www/default/js/jquery.js"></script>
+<script type="text/javascript" src="../r/cms/www/default/js/jquery.lightbox_me.js"></script>
+<script type="text/javascript" src="../r/cms/www/default/js/focus1.js"></script>
+<script type="text/javascript" src="../r/cms/www/default/js/lazyload.js"></script>
+<script type="text/javascript" src="../r/cms/www/default/js/tab1.js"></script>
+<script type="text/javascript" src="../r/cms/www/default/js/tab2.js"></script>
+<link href="../r/cms/jqueryUI/jquery.ui.css" rel="stylesheet" type="text/css">
+<!--<script src="/r/cms/jquery.js" type="text/javascript"></script>-->
+<script src="../r/cms/jqueryUI/jquery-ui.js" type="text/javascript"></script>
+<script src="../r/cms/front.js" type="text/javascript"></script>
+<script src="../r/cms/www/default/js/indexshow.js" type="text/javascript"></script>
+<script language="JavaScript">var _trackDataType = 'web';var _trackData = _trackData || [];</script>
+<script type="text/javascript" id="kpyfx_js_id_10004090" src="../count/10004090/10004090.js"></script>
+<script type="text/javascript">
+$(function() {
+   var topNum = parseInt($("#img").css("top")+"");
+   $(window).scroll(function(){
+   var scrollTopNum = $(window).scrollTop();
+   $("#img").stop(true,false).delay(200).animate({top:scrollTopNum+topNum},"slow");
+   });
+	Cms.siteFlow("", location.href, document.referrer);
+});
+function closeWindow(){ 
+$(".winTitle").hide(); 
+$(".winContent").hide(); 
+} 
+</script>
+<style>
+   .Book_1 a{color:#000000;}
+   .Book_1 a:hover{color:#ffa600;}
+   .Book_1 {color:#000000;}
+   .h11 a{color:#000000;}
+    .winTitle{background:#d0d0d0; height:20px; line-height:20px} 
+   .winTitle .title_left{font-weight:bold; color:#FFF; padding-left:5px; float:left} 
+   .winTitle .title_right{float:right} 
+   .winTitle .title_right a{color:#000; text-decoration:none} 
+   .winTitle .title_left a{color:#000; text-decoration:none} 
+   .winTitle .title_right a:hover{text-decoration:underline; color:#FF0000} 
+   .winTitle .title_left a:hover{text-decoration:underline; color:#FF0000} 
+   .winContent{padding:5px;border:1px solid #d0d0d0;} 
+
+   
+</style>
+
+
+<script type="text/javascript">
+var Speed_1 = 10; //速度(毫秒)
+var Space_1 = 2; //每次移动(px)
+var PageWidth_1 = 1 * 3; //翻页宽度
+var interval_1 = 100; //翻页间隔时间
+var fill_1 = 0; //整体移位
+var MoveLock_1 = false;
+var MoveTimeObj_1;
+var MoveWay_1="right";
+var Comp_1 = 0;
+var AutoPlayObj_1=null;
+function GetObj(objName){
+	if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}
+}
+function AutoPlay_1(){
+	clearInterval(AutoPlayObj_1);AutoPlayObj_1=setInterval('ISL_GoDown_1();ISL_StopDown_1();',interval_1)
+}
+function ISL_GoUp_1(){
+	if(MoveLock_1)return;
+	clearInterval(AutoPlayObj_1);
+	MoveLock_1=true;
+	MoveWay_1="left";
+	MoveTimeObj_1=setInterval('ISL_ScrUp_1();',Speed_1);
+}
+function ISL_StopUp_1(){
+	if(MoveWay_1 == "right"){return};
+	clearInterval(MoveTimeObj_1);
+	if((GetObj('ISL_Cont_1').scrollLeft-fill_1)%PageWidth_1!=0){
+		Comp_1=fill_1-(GetObj('ISL_Cont_1').scrollLeft%PageWidth_1);CompScr_1()
+	}else{
+		MoveLock_1=false
+	}
+	AutoPlay_1()
+}
+function ISL_ScrUp_1(objName){
+	if(GetObj('ISL_Cont_1').scrollLeft<=0){
+		GetObj('ISL_Cont_1').scrollLeft=GetObj('ISL_Cont_1').scrollLeft+GetObj('List1_1').offsetWidth}
+GetObj('ISL_Cont_1').scrollLeft-=Space_1}
+
+function ISL_GoDown_1(){
+	clearInterval(MoveTimeObj_1);
+	if(MoveLock_1)return;
+	clearInterval(AutoPlayObj_1);
+	MoveLock_1=true;
+	MoveWay_1="right";
+	ISL_ScrDown_1();
+	MoveTimeObj_1=setInterval('ISL_ScrDown_1()',Speed_1);
+}
+function ISL_StopDown_1(){
+	if(MoveWay_1 == "left"){return};
+	clearInterval(MoveTimeObj_1);
+	if(GetObj('ISL_Cont_1').scrollLeft%PageWidth_1-(fill_1>=0?fill_1:fill_1+1)!=0){
+		Comp_1=PageWidth_1-GetObj('ISL_Cont_1').scrollLeft%PageWidth_1+fill_1;CompScr_1()
+	}else{MoveLock_1=false}
+	AutoPlay_1();
+}
+function ISL_ScrDown_1(){
+	if(GetObj('ISL_Cont_1').scrollLeft>=GetObj('List1_1').scrollWidth){
+		GetObj('ISL_Cont_1').scrollLeft=GetObj('ISL_Cont_1').scrollLeft-GetObj('List1_1').scrollWidth;
+	}
+	GetObj('ISL_Cont_1').scrollLeft+=Space_1;
+}
+function CompScr_1(){
+	if(Comp_1==0){MoveLock_1=false;return}
+	var num,TempSpeed=Speed_1,TempSpace=Space_1;
+	if(Math.abs(Comp_1)<PageWidth_1/2){
+		TempSpace=Math.round(Math.abs(Comp_1/Space_1));
+		if(TempSpace<1){TempSpace=1}
+	}
+	if(Comp_1<0){
+		if(Comp_1<-TempSpace){
+			Comp_1+=TempSpace;num=TempSpace
+		}else{
+			num=-Comp_1;
+			Comp_1=0
+		}
+		GetObj('ISL_Cont_1').scrollLeft-=num;setTimeout('CompScr_1()',TempSpeed)
+	}else{
+		if(Comp_1>TempSpace){
+			Comp_1-=TempSpace;num=TempSpace}
+		else{
+			num=Comp_1;
+			Comp_1=0;
+		}
+		GetObj('ISL_Cont_1').scrollLeft+=num;
+		setTimeout('CompScr_1()',TempSpeed)
+	}
+}
+function picrun_ini(){
+	GetObj("List2_1").innerHTML=GetObj("List1_1").innerHTML;
+	GetObj('ISL_Cont_1').scrollLeft=fill_1>=0?fill_1:GetObj('List1_1').scrollWidth-Math.abs(fill_1);
+	GetObj("ISL_Cont_1").onmouseover=function(){clearInterval(AutoPlayObj_1)}
+	AutoPlay_1();
+}
+</script>
+
+<script type="text/javascript">
+
+var Speed_2 = 10; //速度(毫秒)
+var Space_2 = 2; //每次移动(px)
+var PageWidth_2 = 1 * 3; //翻页宽度
+var interval_2 = 100; //翻页间隔时间
+var fill_2 = 0; //整体移位
+var MoveLock_2 = false;
+var MoveTimeObj_2;
+var MoveWay_2="right";
+var Comp_2 = 0;
+var AutoPlayObj_2=null;
+function AutoPlay_2(){
+	clearInterval(AutoPlayObj_2);AutoPlayObj_2=setInterval('ISL_GoDown_2();ISL_StopDown_2();',interval_2)
+}
+function ISL_GoUp_2(){
+	if(MoveLock_2)return;
+	clearInterval(AutoPlayObj_2);
+	MoveLock_2=true;
+	MoveWay_2="left";
+	MoveTimeObj_2=setInterval('ISL_ScrUp_2();',Speed_2);
+}
+function ISL_StopUp_2(){
+	if(MoveWay_2 == "right"){return};
+	clearInterval(MoveTimeObj_2);
+	if((GetObj('ISL_Cont_2').scrollLeft-fill_2)%PageWidth_2!=0){
+		Comp_2=fill_2-(GetObj('ISL_Cont_2').scrollLeft%PageWidth_2);CompScr_2()
+	}else{
+		MoveLock_2=false
+	}
+	AutoPlay_2()
+}
+function ISL_ScrUp_2(objName){
+	if(GetObj('ISL_Cont_2').scrollLeft<=0){
+		GetObj('ISL_Cont_2').scrollLeft=GetObj('ISL_Cont_2').scrollLeft+GetObj('List1_2').offsetWidth}
+GetObj('ISL_Cont_2').scrollLeft-=Space_2}
+
+function ISL_GoDown_2(){
+	clearInterval(MoveTimeObj_2);
+	if(MoveLock_2)return;
+	clearInterval(AutoPlayObj_2);
+	MoveLock_2=true;
+	MoveWay_2="right";
+	ISL_ScrDown_2();
+	MoveTimeObj_2=setInterval('ISL_ScrDown_2()',Speed_2);
+}
+function ISL_StopDown_2(){
+	if(MoveWay_2 == "left"){return};
+	clearInterval(MoveTimeObj_2);
+	if(GetObj('ISL_Cont_2').scrollLeft%PageWidth_2-(fill_2>=0?fill_2:fill_2+1)!=0){
+		Comp_2=PageWidth_2-GetObj('ISL_Cont_2').scrollLeft%PageWidth_2+fill_2;CompScr_2()
+	}else{MoveLock_2=false}
+	AutoPlay_2();
+}
+function ISL_ScrDown_2(){
+	if(GetObj('ISL_Cont_2').scrollLeft>=GetObj('List2_2').scrollWidth){
+		GetObj('ISL_Cont_2').scrollLeft=GetObj('ISL_Cont_2').scrollLeft-GetObj('List1_2').scrollWidth;
+	}
+	GetObj('ISL_Cont_2').scrollLeft+=Space_2;
+}
+function CompScr_2(){
+	if(Comp_2==0){MoveLock_2=false;return}
+	var num,TempSpeed=Speed_2,TempSpace=Space_2;
+	if(Math.abs(Comp_2)<PageWidth_2/2){
+		TempSpace=Math.round(Math.abs(Comp_2/Space_2));
+		if(TempSpace<1){TempSpace=1}
+	}
+	if(Comp_2<0){
+		if(Comp_2<-TempSpace){
+			Comp_2+=TempSpace;num=TempSpace
+		}else{
+			num=-Comp_2;
+			Comp_2=0
+		}
+		GetObj('ISL_Cont_2').scrollLeft-=num;setTimeout('CompScr_2()',TempSpeed)
+	}else{
+		if(Comp_2>TempSpace){
+			Comp_2-=TempSpace;num=TempSpace}
+		else{
+			num=Comp_2;
+			Comp_2=0;
+		}
+		GetObj('ISL_Cont_2').scrollLeft+=num;
+		setTimeout('CompScr_2()',TempSpeed)
+	}
+}
+function picrun_ini_2(){
+	GetObj("List2_2").innerHTML=GetObj("List1_2").innerHTML;
+	GetObj('ISL_Cont_2').scrollLeft=fill_2>=0?fill_2:GetObj('List1_2').scrollWidth-Math.abs(fill_2);
+	GetObj("ISL_Cont_2").onmouseover=function(){clearInterval(AutoPlayObj_2)}
+	AutoPlay_2();
+}
+
+
+</script>
+
+</head>
+<body>
+<!--<div style="z-index:9999999"><script language="javascript" type="text/javascript" src="http://www.fjagri.gov.cn/js/index2.js"></script></div>-->
+<!-- 右侧显示 -->
+
+<!--顶部-->
+<script language="JavaScript">
+<!--
+function CalConv()
+ {//
+	FIRSTYEAR = 1998;
+	LASTYEAR = 2031;
+	today = new Date();
+	SolarYear = today.getFullYear();
+	SolarMonth = today.getMonth() + 1;
+	SolarDate = today.getDate();
+	Weekday = today.getDay();
+	LunarCal = [
+  new tagLunarCal( 27,  5, 3, 43, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1 ),
+  new tagLunarCal( 46,  0, 4, 48, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1 ), /* 88 */
+  new tagLunarCal( 35,  0, 5, 53, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1 ), /* 89 */
+  new tagLunarCal( 23,  4, 0, 59, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1 ),
+  new tagLunarCal( 42,  0, 1,  4, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1 ),
+  new tagLunarCal( 31,  0, 2,  9, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0 ),
+  new tagLunarCal( 21,  2, 3, 14, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1 ), /* 93 */
+  new tagLunarCal( 39,  0, 5, 20, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1 ),
+  new tagLunarCal( 28,  7, 6, 25, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1 ),
+  new tagLunarCal( 48,  0, 0, 30, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1 ),
+  new tagLunarCal( 37,  0, 1, 35, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1 ), /* 97 */
+  new tagLunarCal( 25,  5, 3, 41, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1 ),
+  new tagLunarCal( 44,  0, 4, 46, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1 ),
+  new tagLunarCal( 33,  0, 5, 51, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1 ),
+  new tagLunarCal( 22,  4, 6, 56, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0 ), /* 101 */
+  new tagLunarCal( 40,  0, 1,  2, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0 ),
+  new tagLunarCal( 30,  9, 2,  7, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1 ),
+  new tagLunarCal( 49,  0, 3, 12, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1 ),
+  new tagLunarCal( 38,  0, 4, 17, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0 ), /* 105 */
+  new tagLunarCal( 27,  6, 6, 23, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1 ),
+  new tagLunarCal( 46,  0, 0, 28, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0 ),
+  new tagLunarCal( 35,  0, 1, 33, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0 ),
+  new tagLunarCal( 24,  4, 2, 38, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1 ), /* 109 */
+  new tagLunarCal( 42,  0, 4, 44, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1 ),
+  new tagLunarCal( 31,  0, 5, 49, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0 ),
+  new tagLunarCal( 21,  2, 6, 54, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1 ),
+  new tagLunarCal( 40,  0, 0, 59, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1 ), /* 113 */
+  new tagLunarCal( 28,  6, 2,  5, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0 ),
+  new tagLunarCal( 47,  0, 3, 10, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1 ),
+  new tagLunarCal( 36,  0, 4, 15, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1 ),
+  new tagLunarCal( 25,  5, 5, 20, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0 ), /* 117 */
+  new tagLunarCal( 43,  0, 0, 26, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1 ),
+  new tagLunarCal( 32,  0, 1, 31, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0 ),
+  new tagLunarCal( 22,  3, 2, 36, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0 ) ];
+ /* 民國年每月之日數 */
+ SolarCal = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ];
+ /* 民國年每月之累積日數, 平年與閏年 */
+SolarDays = [  0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365, 396,  0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335, 366, 397 ];
+	AnimalIdx = ["马", "羊", "猴", "鸡", "狗", "猪", "鼠", "牛", "虎", "兔", "龙", "蛇" ];
+	LocationIdx = [ "南", "东", "北", "西" ];
+	if ( SolarYear <= FIRSTYEAR || SolarYear > LASTYEAR ) return 1;
+	sm = SolarMonth - 1;
+		if ( sm < 0 || sm > 11 ) return 2;
+		leap = GetLeap( SolarYear );
+	if ( sm == 1 )
+		d = leap + 28;
+	else
+		d = SolarCal[sm];
+	if ( SolarDate < 1 || SolarDate > d ) return 3;
+	y = SolarYear - FIRSTYEAR;
+	acc = SolarDays[ leap*14 + sm ] + SolarDate;
+	kc = acc + LunarCal[y].BaseKanChih;
+	Kan = kc % 10;
+	Chih = kc % 12;
+	Location = LocationIdx[kc % 4];
+	Age = kc % 60;
+	if ( Age < 22 )
+		Age = 22 - Age;
+	else
+		Age = 82 - Age;
+	Animal = AnimalIdx[ Chih ];
+	if ( acc <= LunarCal[y].BaseDays ) {
+		y--;
+		LunarYear = SolarYear - 1;
+		leap = GetLeap( LunarYear );
+		sm += 12;
+		acc = SolarDays[leap*14 + sm] + SolarDate;
+	 }
+	else
+		LunarYear = SolarYear;
+			l1 = LunarCal[y].BaseDays;
+	for ( i=0; i<13; i++ ) {
+		l2 = l1 + LunarCal[y].MonthDays[i] + 29;
+		if ( acc <= l2 ) break;
+		l1 = l2;
+	 }
+	LunarMonth = i + 1;
+	LunarDate = acc - l1;
+	im = LunarCal[y].Intercalation;
+	if ( im != 0 && LunarMonth > im ) {
+		LunarMonth--;
+		if ( LunarMonth == im ) LunarMonth = -im;
+	 }
+	if ( LunarMonth > 12 ) LunarMonth -= 12;
+ today=new Date();
+        function initArray(){
+                         this.length=initArray.arguments.length
+                         for(var i=0;i<this.length;i++)
+                         this[i+1]=initArray.arguments[i]  }
+       var d=new initArray("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+             document.write("<span style='color:white;font-size:12px'> ", today.getFullYear()," 年 ",today.getMonth()+1," 月 ",today.getDate()," 日 ",d[today.getDay()+1],"");
+	  document.write( "<span style='color:white;font-size:12px'>【<u> 农历 " + LunarMonth + "月" + LunarDate + "日</u>】" );
+      // document.write( "煞" + Location + " 沖" + Animal + Age + "岁</span>" );
+                                  return 0;
+}
+ /* 求此民國年是否為閏年, 返回 0 為平年, 1 為閏年 */
+function GetLeap( year )
+ {
+   if ( year % 400 == 0 )
+     return 1;
+   else if ( year % 100 == 0 )
+     return 0;
+   else if ( year % 4 == 0 )
+     return 1;
+   else
+     return 0;
+ }//。
+function tagLunarCal( d, i, w, k, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13) {
+ this.BaseDays = d;         /* 到民國 1 月 1 日到農曆正月初一的累積日數 */
+ this.Intercalation = i;    /* 閏月月份. 0==此年沒有閏月 */
+ this.BaseWeekday = w;      /* 此年民國 1 月 1 日為星期幾再減 1 */
+ this.BaseKanChih = k;      /* 此年民國 1 月 1 日之干支序號減 1 */
+ this.MonthDays = [ m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13 ]; /* 此農曆年每月之大小, 0==小月(29日), 1==大月(30日) */
+}//
+//-->
+
+</script>
+<!--banner-->
+
+
+<div class="Banner_Ser">
+   
+     <!-- <iframe style="position:absolute;top:12px;right:300px;" width="225" scrolling="no" height="80" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=8&color=%23080808&icon=5&num=1"></iframe>-->
+   
+   <span class="spec11" style="color:#111111"><script>CalConv();</script><a style="margin-left:30px;" href="../index.html" target="_blank">政务版</a> | <a href="../ywb/index.html" target="_blank">English</a> |  <a href="javascript:;" target="_blank">返回旧版本</a> | <a href="javascript:;" target="_blank">政务邮箱</a></span>
+</div>
+<script>
+var data="";
+$(document).ready(function() {
+	$(".menu>li").on("mouseover",function(){
+		$(".menu>li").each(function(i){
+			$(this).removeClass("active");
+		});
+		$(this).addClass("active");
+		var left = this.offsetLeft;
+		$($(this).children()[1]).css("margin-left","-"+left+"px");
+	});
+	$(".menu>li").on("mouseout",function(){});
+	
+	
+	
+	$('#hasLoginContent').on("mouseleave",function(){
+			$(this).hide();
+	});
+});
+</script>
+<script>
+//delay延迟时间（毫秒）
+$(function() {
+	$("input[name=q]").autocomplete({
+		 source: "/search/v_ajax_list.jspx",
+		 minLength: 2,
+		 max:5,
+		 delay:100,
+		 autoFocus: true,
+		 select: function(e, ui) {
+			 $("input[name='q']").val(ui.item.value);
+			 $("#searchForm").submit();
+		 },
+		 success: function( data ) {
+			    response( $.map( data.items, function( item ) {
+			        return {
+			         label: '<B>' + item.id + '</B><br>' + item.label,
+			         value: item.id
+			        }
+			       }));
+		}
+	});
+});
+function qkeypress(){
+	var q=$("input[name=q]");
+	if(q.val().trim()!=""){
+		$("input[name=q]").autocomplete("enable");
+	}else{
+		$("input[name=q]").autocomplete("disable");
+	}
+}
+</script>
+<!--导航-->
+<div class="QMenu_Ser">
+  <div class="cent width1000 menubar" style="position: absolute; top:76px; height: 85px;z-index:10;">
+    <div class="Search">
+       <form action="/search.jspx" target="_blank" id="searchForm">
+        <table width="203" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td id="table_nav"><label for="textfield"></label>
+              <input name="q" value="请输入关键词" type="text" onfocus="if(this.value=='请输入关键词')this.value=''" onkeypress="qkeypress()" onblur="if(this.value=='')this.value='请输入关键词'" maxlength="40" autocomplete="off" style="text-align:center;border:0px;width:96%;height:20px;margin-left:1px;margin-top:-2px;"></td>
+            <td><input type="image" src="/r/cms/www/default/img/but_2.gif" name="button" id="button" value="提交"></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <ul class="menu">
+      <li class="active"><a href="">
+        <div style="background-color:#399c2a; width:90px; height:50px;"><strong>首页</strong></div>
+        </a>
+        <ul class="submenu">
+          <!---->
+        </ul>
+      </li>
+      <!--
+      <li><a href="http://www.chinapesticide.org.cn:80/zwdt/index.jhtml"  target="_self" >
+        <div><strong>新闻动态</strong></div>
+        </a>
+        <ul class="submenu">
+        </ul>
+      </li>
+      <li><a href="http://www.chinapesticide.org.cn:80/hydt/index.jhtml"  target="_self" >
+        <div><strong>行业资讯</strong></div>
+        </a>
+        <ul class="submenu">
+        </ul>
+      </li>
+      <li><a href="http://www.chinapesticide.org.cn:80/yqnq/index.jhtml"  target="_self" >
+        <div><strong>药情农情</strong></div>
+        </a>
+        <ul class="submenu">
+        </ul>
+      </li>
+      <li><a href="http://www.chinapesticide.org.cn:80/hysj/index.jhtml"  target="_self" >
+        <div><strong>行业数据</strong></div>
+        </a>
+        <ul class="submenu">
+          <li><a href="../hysj/index.jhtml"  target="_self" >农药登记数据</a><span>　|</span></li>
+          <li><a href="http://202.127.42.84/tbt-sps/mrlsdb/mrlsdb.do"  target="_self" >农药残留限量数据</a><span>　|</span></li>
+          <li><a href="http://www.chinapesticide.org.cn:80/nyzlbzsj.jhtml"  target="_self" >标签数据查询</a><span>　|</span></li>
+          <li><a href="http://www.chinapesticide.org.cn:80/nysczfsj.jhtml"  target="_self" >田间试验审批</a><span>　|</span></li>
+          <li><a href="http://www.chinapesticide.org.cn:80/sydwsj.jhtml"  target="_self" >试验单位列表</a><span>　|</span></li>
+          <li><a href="http://www.chinapesticide.org.cn:80/nyjcksj.jhtml"  target="_self" >企业数据查询</a><span>　|</span></li>
+          <li><a href="http://www.chinapesticide.org.cn:80/yxcftozwf.jhtml"  target="_self" >有效成分查作物</a></li>
+        </ul>
+      </li>
+      <li><a href="http://www.chinapesticide.org.cn:80/zwfw4fwb/index.jhtml"  target="_self" >
+        <div><strong>政务服务</strong></div>
+        </a>
+        <ul class="submenu">
+        </ul>
+      </li>
+      <li><a href="http://www.chinapesticide.org.cn:80/qkkp/index.jhtml"  target="_self" >
+        <div><strong>期刊科普</strong></div>
+        </a>
+        <ul class="submenu">
+          <li><a href="http://www.chinapesticide.org.cn:80/qkjs.jhtml"  target="_self" >期刊介绍</a><span>　|</span></li>
+          <li><a href="http://www.chinapesticide.org.cn:80/lshjs.jhtml"  target="_self" >理事会介绍</a><span>　|</span></li>
+          <li><a href="http://www.chinapesticide.org.cn:80/mlhdzwg/index.jhtml"  target="_self" >目录和电子文稿</a><span>　|</span></li>
+          <li><a href="http://www.chinapesticide.org.cn:80/qkglxt.jhtml"  target="_self" >期刊管理系统</a><span>　|</span></li>
+          <li><a href="http://www.chinapesticide.org.cn:80/kpxccl/index.jhtml"  target="_self" >科普宣传材料</a></li>
+        </ul>
+      </li>
+      <li><a href="http://nykxyglqk.icama.cn/emagazine/home/homePage.do"  target="_self" >
+        <div><strong>农药科管期刊</strong></div>
+        </a>
+        <ul class="submenu">
+        </ul>
+      </li>
+       -->   
+      <!--政务动态-->
+      <li><a href="javascript:;">
+        <div><strong>新闻动态</strong></div>
+        </a>
+        <ul class="submenu">
+        </ul>
+      </li>
+      
+      <li><a href="javascript:;">
+        <div><strong>行业资讯</strong></div>
+        </a>
+        <ul class="submenu">
+        </ul>
+      </li>
+       <!--药情农情-->
+      <li><a href="javascript:;">
+        <div><strong>药情农情</strong></div>
+        </a>
+        <ul class="submenu">
+        </ul>
+      </li>
+       <!--行业数据-->
+      <li><a href="../hysj/index.html">
+        <div><strong>行业数据</strong></div>
+        </a>
+        <ul class="submenu">
+           <li><a href="../hysj/index.html" target="_self">农药登记数据</a><span>　|</span></li>
+           <li><a href="javascript:;" target="_self">农药残留限量数据</a><span>　|</span></li>
+           <li><a href="javascript:;" target="_self">标签数据查询</a><span>　|</span></li>
+           <li><a href="javascript:;" target="_self">田间试验审批</a><span>　|</span></li>
+           <li><a href="javascript:;" target="_self">试验单位列表</a><span>　|</span></li>
+           <li><a href="javascript:;" target="_self">企业数据查询</a><span>　|</span></li>
+           <li><a href="javascript:;" target="_self">有效成分查作物</a></li>
+        </ul>
+      </li>
+      <!-- 风采 -->
+      <li><a href="javascript:void(0)">
+        <div><strong>行业风采</strong></div>
+        </a>
+        <ul class="submenu">
+        </ul>
+      </li>
+      <!--
+      <li><a href="javascript:void(0)">
+        <div><strong>政务服务</strong></div>
+        </a>
+        <ul class="submenu">
+           <li><a href="http://www.chinapesticide.org.cn:80/bszn/index.jhtml"  target="_blank" >办事指南</a><span>　|</span></li>
+           <li><a href="http://www.chinapesticide.org.cn:80/xgbgxz/index.jhtml"  target="_blank" >相关表格下载</a><span>　|</span></li>
+           <li><a href="http://nyyyw.agri.gov.cn/SignOnServlet"  target="_blank" >金农工程应用系统</a><span>　|</span></li>
+           <li><a href="http://202.127.42.243/nySystem/login.jsp"  target="_blank" >农药执法服务系统</a><span>　|</span></li>
+           <li><a href="http://www.icama.org.cn:8081/ztbd/fxjcyj.html"  target="_blank" >风险监测和预警</a><span>　|</span></li>
+           <li><a href="/myquery/fieldguide/fieldguide"  target="_blank" >田试区域指南(试行)</a></li>
+        </ul>
+      </li>
+         -->
+      <!-- 期刊科普 -->
+      <li><a href="javascript:void(0)">
+        <div><strong>期刊科普</strong></div>
+        </a>
+        <ul class="submenu">
+           <li><a href="javascript:;" target="_self">期刊介绍</a><span>　|</span></li>
+           <li><a href="javascript:;" target="_self">理事会介绍</a><span>　|</span></li>
+           <li><a href="javascript:;" target="_self">目录和电子文稿</a><span>　|</span></li>
+           <li><a href="javascript:;" target="_self">期刊管理系统</a><span>　|</span></li>
+           <li><a href="javascript:;" target="_self">科普宣传材料</a></li>
+        </ul>
+      </li>
+      <li style="cursor:pointer;"><a href="javascript:;" target="_blank">
+        <div><strong>数字平台</strong></div></a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+<div class="cls"></div>     <!--滚动新闻-->
+    <div class="Roll_news_gov" style="margin-top:80px;"><img src="../r/cms/www/default/img/horn.png" width="20" height="20">
+    <marquee direction="left" behavior="scroll" scrollamount="6" scrolldelay="0" loop="-1" width="930" height="20" hspace="10" vspace="10" onmouseover="this.stop()" onmouseout="this.start()">
+                  <a href="javascript:;" title="欢迎订阅2021年《农药科学与管理》" target="_blank">
+欢迎订阅2021年《农药科学与管理》                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农业农村部农药检定所农药检验实验室通过复评审+变更评审现场考核" target="_blank">
+农业农村部农药检定所农药检验实验室通过复评审+变更评审现场考核                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="《农药缓释颗粒剂产品标准编写规范》等4项农业行业标准通过专家审定" target="_blank">
+《农药缓释颗粒剂产品标准编写规范》等4项农业行业标准通过专家审定                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="《农药产品中有效成分含量测定通用分析方法 液相色谱法》农业行业标准通过专家审定" target="_blank">
+《农药产品中有效成分含量测定通用分析方法 液相色谱法》农业行业标准通过专家审定                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农业农村部农药检定所关于征集2021-2022年度《农药科学与管理》理事会成员的通知" target="_blank">
+农业农村部农药检定所关于征集2021-2022年度《农药科学与管理》理事会成员的通知                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="登记延续友情提示（2020年11月）" target="_blank">
+登记延续友情提示（2020年11月）                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="登记延续友情提示（2020年10月）" target="_blank">
+登记延续友情提示（2020年10月）                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农业农村部农药检定所关于征求《农药产品中有效成分含量测定通用分析方法-液相色谱法（征求意见稿）》农业行业标准意见的函" target="_blank">
+农业农村部农药检定所关于征求《农药产品中有效成分含量测定通用分析方法-液相色谱...                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农业农村部办公厅关于切实加强百草枯专项整治工作的通知" target="_blank">
+农业农村部办公厅关于切实加强百草枯专项整治工作的通知                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="登记延续友情提示（2020年9月）" target="_blank">
+登记延续友情提示（2020年9月）                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农药登记信息(2020年第15期)" target="_blank">
+农药登记信息(2020年第15期)                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农业农村部农药检定所（国际食品法典农药残留委员会秘书处）2020年公开招聘拟聘用人员公示" target="_blank">
+农业农村部农药检定所（国际食品法典农药残留委员会秘书处）2020年公开招聘拟聘用人...                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="登记延续友情提示（2020年8月）" target="_blank">
+登记延续友情提示（2020年8月）                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="登记延续友情提示（2020年7月）" target="_blank">
+登记延续友情提示（2020年7月）                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="“中国农药查询”APP正式上线！" target="_blank">
+“中国农药查询”APP正式上线！                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农业农村部农药检定所关于开展2020年农药质量检测能力比对活动的通知" target="_blank">
+农业农村部农药检定所关于开展2020年农药质量检测能力比对活动的通知                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农药登记信息(2020年第9期)" target="_blank">
+农药登记信息(2020年第9期)                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农业农村部农药检定所关于开展大米粉中农药残留检测能力比对活动的通知" target="_blank">
+农业农村部农药检定所关于开展大米粉中农药残留检测能力比对活动的通知                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="仅限出口农药产品登记有关事项公告（中华人民共和国农业农村部公告第269号）" target="_blank">
+仅限出口农药产品登记有关事项公告（中华人民共和国农业农村部公告第269号）                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="关于印发贫困地区特色产业稳定发展指导意见的通知" target="_blank">
+关于印发贫困地区特色产业稳定发展指导意见的通知                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农业农村部种植业管理司关于《一类农作物病虫害名录》公开征求意见的通知" target="_blank">
+农业农村部种植业管理司关于《一类农作物病虫害名录》公开征求意见的通知                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="登记延续友情提示（2020年6月）" target="_blank">
+登记延续友情提示（2020年6月）                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="关于印发《特色小宗作物农药残留风险控制技术指标》的通知" target="_blank">
+关于印发《特色小宗作物农药残留风险控制技术指标》的通知                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农药登记信息(2020年第6期)" target="_blank">
+农药登记信息(2020年第6期)                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="登记延续友情提示（2020年5月）" target="_blank">
+登记延续友情提示（2020年5月）                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="关于公开征求农药最大残留限量（征求意见稿）意见的函" target="_blank">
+关于公开征求农药最大残留限量（征求意见稿）意见的函                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="含精甲霜灵混配制剂管理措施(中华人民共和国农业农村部公告第275号)" target="_blank">
+含精甲霜灵混配制剂管理措施(中华人民共和国农业农村部公告第275号)                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="第21、22批通过认定的农药登记试验单位公示" target="_blank">
+第21、22批通过认定的农药登记试验单位公示                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="关于征求《特色小宗作物农药残留风险控制技术指南（征求意见稿）》意见的函" target="_blank">
+关于征求《特色小宗作物农药残留风险控制技术指南（征求意见稿）》意见的函                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="关于征求《农药风险监测评价管理规定（征求意见稿）》意见的函" target="_blank">
+关于征求《农药风险监测评价管理规定（征求意见稿）》意见的函                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="李克强签署国务院令 公布《农作物病虫害防治条例》" target="_blank">
+李克强签署国务院令 公布《农作物病虫害防治条例》                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="关于2020年特色小宗作物用药试验项目、全国农药监督抽查项目承担单位的公示" target="_blank">
+关于2020年特色小宗作物用药试验项目、全国农药监督抽查项目承担单位的公示                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农药登记信息(2020年第4期)" target="_blank">
+农药登记信息(2020年第4期)                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="登记延续友情提示（2020年4月）" target="_blank">
+登记延续友情提示（2020年4月）                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农药登记信息(2020年第3期)" target="_blank">
+农药登记信息(2020年第3期)                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农药登记试验单位名单（中华人民共和国农业农村部公告第280号）" target="_blank">
+农药登记试验单位名单（中华人民共和国农业农村部公告第280号）                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="关于做好2019年农药登记试验总结工作的通知" target="_blank">
+关于做好2019年农药登记试验总结工作的通知                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农药登记信息(2020年第2期)" target="_blank">
+农药登记信息(2020年第2期)                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="出口退税政策调整将进一步促进农药出口贸易" target="_blank">
+出口退税政策调整将进一步促进农药出口贸易                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="安徽久易捐赠价值125万元丙硫菌唑驰援湖北" target="_blank">
+安徽久易捐赠价值125万元丙硫菌唑驰援湖北                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农业农村部农药检定所关于做好农药进出口通知单无纸化申请工作的通知" target="_blank">
+农业农村部农药检定所关于做好农药进出口通知单无纸化申请工作的通知                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农业农村部采取措施优化农药出口管理服务" target="_blank">
+农业农村部采取措施优化农药出口管理服务                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="关于加强小麦条锈病防控工作的通知" target="_blank">
+关于加强小麦条锈病防控工作的通知                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="登记延续友情提示（2020年3月）" target="_blank">
+登记延续友情提示（2020年3月）                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农药登记信息(2020年第1期)" target="_blank">
+农药登记信息(2020年第1期)                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农业农村部在京单位2020年度公开招聘应届高校毕业生等人员公告" target="_blank">
+农业农村部在京单位2020年度公开招聘应届高校毕业生等人员公告                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农业农村部优化农药行政审批服务支持农药企业应对疫情" target="_blank">
+农业农村部优化农药行政审批服务支持农药企业应对疫情                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="国务院应对新型冠状病毒感染肺炎疫情联防联控机制关于压实“菜篮子”市长负责制做好农产品稳产保供工作的通知" target="_blank">
+国务院应对新型冠状病毒感染肺炎疫情联防联控机制关于压实“菜篮子”市长负责制做好...                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农业农村部关于新型冠状病毒肺炎疫情期间优化审批服务的通告" target="_blank">
+农业农村部关于新型冠状病毒肺炎疫情期间优化审批服务的通告                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农业农村部办公厅关于印发《2020年农药管理工作要点》的通知" target="_blank">
+农业农村部办公厅关于印发《2020年农药管理工作要点》的通知                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="登记延续友情提示（2020年2月）" target="_blank">
+登记延续友情提示（2020年2月）                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="关于公开征求《进出口农药管理名录（2020年）（征求意见稿）》意见的函" target="_blank">
+关于公开征求《进出口农药管理名录（2020年）（征求意见稿）》意见的函                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农药登记试验单位名单（2020年农业农村部公告第267号）" target="_blank">
+农药登记试验单位名单（2020年农业农村部公告第267号）                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农业农村部农药检定所召开专题会议研究部署疫情防控和近期工作" target="_blank">
+农业农村部农药检定所召开专题会议研究部署疫情防控和近期工作                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农业农村部政务服务大厅在新型冠状病毒感染的肺炎疫情期间窗口服务通告" target="_blank">
+农业农村部政务服务大厅在新型冠状病毒感染的肺炎疫情期间窗口服务通告                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农药登记试验单位名单（2020年农业农村部公告第255号）" target="_blank">
+农药登记试验单位名单（2020年农业农村部公告第255号）                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="登记延续友情提示（2020年1月）" target="_blank">
+登记延续友情提示（2020年1月）                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="《印楝素乳油》等4项农业行业标准通过专家审定" target="_blank">
+《印楝素乳油》等4项农业行业标准通过专家审定                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="登记延续友情提示（2019年12月）" target="_blank">
+登记延续友情提示（2019年12月）                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="登记延续友情提示（2019年11月）" target="_blank">
+登记延续友情提示（2019年11月）                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="登记延续友情提示（2019年8月）" target="_blank">
+登记延续友情提示（2019年8月）                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农业农村部农药检定所关于改版核准标签内容公布版式的通知" target="_blank">
+农业农村部农药检定所关于改版核准标签内容公布版式的通知                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农业农村部农药检定所关于开展2019年农药质量检测能力比对活动的通知" target="_blank">
+农业农村部农药检定所关于开展2019年农药质量检测能力比对活动的通知                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="登记延续友情提示（2019年7月）" target="_blank">
+登记延续友情提示（2019年7月）                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="登记延续友情提示（2019年6月）" target="_blank">
+登记延续友情提示（2019年6月）                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农业农村部农药检定所关于举办农药登记环境影响资料要求及试验技术培训班的通知" target="_blank">
+农业农村部农药检定所关于举办农药登记环境影响资料要求及试验技术培训班的通知                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农业农村部农药检定所关于征集2019-2020年度《农药科学与管理》理事会成员的通知" target="_blank">
+农业农村部农药检定所关于征集2019-2020年度《农药科学与管理》理事会成员的通知                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="欢迎订阅2019年《农药科学与管理》" target="_blank">
+欢迎订阅2019年《农药科学与管理》                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="关于农药登记有关行政许可办理系统切换的通知" target="_blank">
+关于农药登记有关行政许可办理系统切换的通知                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农资进销存管理系统视频教程" target="_blank">
+农资进销存管理系统视频教程                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="严正声明" target="_blank">
+严正声明                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="全国农药质量追溯系统用户申请" target="_blank">
+全国农药质量追溯系统用户申请                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="javascript:;" title="农业部第五督导组到广西督导《农药管理条例》贯彻落实情况" target="_blank">
+农业部第五督导组到广西督导《农药管理条例》贯彻落实情况                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </marquee>
+    </div>
+    
+    <div class="cls"></div>
+    <!--滚动新闻结束-->
+    <!--广告-->
+    <div class="Ad_ser">
+    <div class="Ad_ser_1"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=1"></script> </div>
+    <div class="Ad_ser_2"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=2"></script> </div>
+    <div class="Ad_ser_3"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=3"></script> </div>
+    <div class="Ad_ser_4"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=4"></script> </div>
+    </div>
+    <!--广告结束-->
+    <!--新闻动态&风采-->
+<div class="News_ser" style="margin-top:5px;">
+  <!-- 右侧广告 -->
+  <div class="News_ser_right">
+    <div class="News_ser_right_Ad1"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=5"></script></div>
+    <div class="News_ser_right_Ad2"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=6"></script></div>
+    <div class="News_ser_right_Ad3"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=7"></script></div>
+  </div>
+  <!-- 右侧广告结束 -->
+  <div class="News_ser_top"> 
+    <!--focus-->
+    <div class="News_ser_top_left">
+      <div id="content">
+        <div id="main"> 
+          <!-----------图片切换  begin----------->
+          <div class="sub_box">
+            <div id="p-select" class="sub_nav">
+              <div class="sub_no" id="bd1lfsj">
+                <ul>
+                  <li class="show">1</li>
+                  <li class="">2</li>
+                  <li class="">3</li>
+                  <li class="">4</li>
+                </ul>
+              </div>
+            </div>
+            <div id="bd1lfimg">
+              <div>
+                <dl class="show">
+                </dl>
+                <dl class="">
+                  <dt><a href="javascript:;" title="农业农村部农药检定所农药检验实验室通过复评审+变更评审现场考核" target="_blank">
+                      <img src="../u/cms/www/202012/2115282016c2.jpg" alt="农业农村部农药检定所农药检验实验室通过复评审+变更评审现场考核"></a></dt>
+                  <dd>
+                    <h2>农业农村部农药检定所农药检验实验室通过...</h2>
+                  </dd>
+                </dl>
+                <dl class="">
+                  <dt><a href="javascript:;" title="农业农村部农药检定所第二党支部参观纪念中国人民志愿军抗美援朝70周年主题展览" target="_blank">
+                      <img src="../u/cms/www/202012/21143443zatw.jpg" alt="农业农村部农药检定所第二党支部参观纪念中国人民志愿军抗美援朝70周年主题展览"></a></dt>
+                  <dd>
+                    <h2>农业农村部农药检定所第二党支部参观纪念...</h2>
+                  </dd>
+                </dl>
+                <dl class="">
+                  <dt><a href="javascript:;" title="农药再评价业务工作交流会在浙江召开" target="_blank">
+                      <img src="../u/cms/www/202012/21144312wwh8.jpg" alt="农药再评价业务工作交流会在浙江召开"></a></dt>
+                  <dd>
+                    <h2>农药再评价业务工作交流会在浙江召开</h2>
+                  </dd>
+                </dl>
+                <dl class="">
+                  <dt><a href="javascript:;" title="农业农村部农药检定所15项农业行业标准通过专家审定" target="_blank">
+                      <img src="../u/cms/www/202012/081421170rtf.jpg" alt="农业农村部农药检定所15项农业行业标准通过专家审定"></a></dt>
+                  <dd>
+                    <h2>农业农村部农药检定所15项农业行业标准通...</h2>
+                  </dd>
+                </dl>
+
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">movec();</script> 
+        </div>
+      </div>
+    </div>
+    <div class="News_ser_top_right">
+      <div class="News_ser_top_right_head">
+        <h1>新闻动态</h1>
+        <h2><a href="javascript:;" target="_blank">更多</a></h2>
+        <ul style="clear:both;">
+         <li><span>2020-12-28</span><a href="javascript:;" target="_blank" title="2020年第13批拟批准登记农药产品公示">2020年第13批拟批准登记农药产品公示</a></li>
+         <li><span>2020-12-24</span><a href="javascript:;" target="_blank" title="农业农村部农药检定所第六党支部参观纪念中国人民志愿军抗美援朝70周年主题展览">农业农村部农药检定所第六党支部参观...</a></li>
+         <li><span>2020-12-21</span><a href="javascript:;" target="_blank" title="农业农村部农药检定所农药检验实验室通过复评审+变更评审现场考核">农业农村部农药检定所农药检验实验室...</a></li>
+         <li><span>2020-12-21</span><a href="javascript:;" target="_blank" title="农业农村部农药检定所第二党支部参观纪念中国人民志愿军抗美援朝70周年主题展览">农业农村部农药检定所第二党支部参观...</a></li>
+         <li><span>2020-12-18</span><a href="javascript:;" target="_blank" title="农药再评价业务工作交流会在浙江召开">农药再评价业务工作交流会在浙江召开</a></li>
+         <li><span>2020-12-07</span><a href="javascript:;" target="_blank" title="“谁执法、谁普法”，奉贤区掀起上海农药新规宣贯浪潮">“谁执法、谁普法”，奉贤区掀起上海...</a></li>
+         <li><span>2020-12-07</span><a href="javascript:;" target="_blank" title="2020年第12批拟批准登记农药产品公示">2020年第12批拟批准登记农药产品公示</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!--40周年-->
+<div class="News_ser_bottom" style="height: 100px; margin: 5px 0px;">
+  <div class="News_ser_bottom_left" style="float:left;"><a href="javascript:;"><img src="../u/cms/www/20181109-40anny/40nian.jpg"></a></div>
+  <div class="News_ser_bottom_right" style="float:left;margin-left:20px;"><a href="javascript:;"><img src="../u/cms/www/20181109-40anny/testGroupShow.jpg"></a></div>
+</div>
+
+<!--行业新闻-->
+<div class="cls"></div>
+<div class="Main_ser">
+  <div class="Main_ser_left">
+    <div class="Main_ser_left_head">
+      <h1>行业资讯</h1>
+      <h2><a href="javascript:;" target="_blank">更多</a></h2>
+    </div>
+    <ul>
+         <li><a href="javascript:;" target="_blank" title="英国或将草甘膦有效期延长三年至2025年12月">英国或将草甘膦有效期延长三年至2025年12月</a></li>
+         <li><a href="javascript:;" target="_blank" title="加拿大拟修订甲磺草胺等3种农药在部分食品中的最大残留限量">加拿大拟修订甲磺草胺等3种农药在部分食品中的最大...</a></li>
+         <li><a href="javascript:;" target="_blank" title="巴西农药登记管理和发展趋势">巴西农药登记管理和发展趋势</a></li>
+         <li><a href="javascript:;" target="_blank" title="巴西批准登记16种非专利农药">巴西批准登记16种非专利农药</a></li>
+         <li><a href="javascript:;" target="_blank" title="欧盟延长异噁酰草胺、环磺酮、螺虫乙酯等54个有效成分的批准期">欧盟延长异噁酰草胺、环磺酮、螺虫乙酯等54个有效成...</a></li>
+         <li><a href="javascript:;" target="_blank" title="辉丰向安道麦转让植保合成与制剂资产的多数股权潜力和新业务将更大释放">辉丰向安道麦转让植保合成与制剂资产的多数股权潜力...</a></li>
+         <li><a href="javascript:;" target="_blank" title="2011-2018年爱尔兰农药销量下降28%，法国增加39%">2011-2018年爱尔兰农药销量下降28%，法国增加39%</a></li>
+         <li><a href="javascript:;" target="_blank" title="2020年1-4月巴西农药进口市场：亚洲损失大量市场份额，而欧洲同比增长10%">2020年1-4月巴西农药进口市场：亚洲损失大量市场份...</a></li>
+      
+      
+    </ul>
+  </div>
+  <div class="Main_ser_mid">
+    <div class="Main_ser_mid_head">
+      <h1>药情农情</h1>
+      <h2><a href="javascript:;" target="_blank">更多</a></h2>
+    </div>
+    <ul>
+         <li><a href="javascript:;" target="_blank" title="农业经济信息日历">农业经济信息日历</a></li>
+         <li><a href="javascript:;" target="_blank" title="重庆市草地贪夜蛾发生与防治">重庆市草地贪夜蛾发生与防治</a></li>
+         <li><a href="javascript:;" target="_blank" title="硝磺草酮、吡虫啉等26种原药价格下调，草铵膦吨价再涨5000！">硝磺草酮、吡虫啉等26种原药价格下调，草铵膦吨价再...</a></li>
+         <li><a href="javascript:;" target="_blank" title="毁灭性害虫红棕象甲威胁生计">毁灭性害虫红棕象甲威胁生计</a></li>
+         <li><a href="javascript:;" target="_blank" title="草铵膦出口增速自2016年放缓，今年市场情形如何？">草铵膦出口增速自2016年放缓，今年市场情形如何？</a></li>
+         <li><a href="javascript:;" target="_blank" title="2020年水稻重大病虫害药剂应急控害技术">2020年水稻重大病虫害药剂应急控害技术</a></li>
+         <li><a href="javascript:;" target="_blank" title="2019年中国农药价格指数运行概况及2020年预测">2019年中国农药价格指数运行概况及2020年预测</a></li>
+         <li><a href="javascript:;" target="_blank" title="印度再延长封国时间，菊酯中间体价格持续高位">印度再延长封国时间，菊酯中间体价格持续高位</a></li>
+    </ul>
+  </div>
+  <div class="Main_ser_right">
+    <div class="Main_ser_right_head">
+      <h1>公示</h1>
+      <h2><a href="../gsxx/index.html" target="_blank">更多</a></h2>
+    </div>
+    <div class="Main_ser_right_body">
+      <ul style="clear:both;">
+      <li><a href="../gsxx/19044.html" target="_blank" title="2020年第13批拟批准登记农药产品公示">2020年第13批拟批准登记...</a></li>
+      <li><a href="../gsxx/18842.html" target="_blank" title="2020年第12批拟批准登记农药产品公示">2020年第12批拟批准登记...</a></li>
+      <li><a href="../gsxx/18782.html" target="_blank" title="登记延续友情提示（2020年12月）">登记延续友情提示（2020...</a></li>
+      <li><a href="../gsxx/18743.html" target="_blank" title="2020年第11批拟批准登记农药产品公示">2020年第11批拟批准登记...</a></li>
+      <li><a href="../gsxx/18382.html" target="_blank" title="登记延续友情提示（2020年11月）">登记延续友情提示（2020...</a></li>
+      <li><a href="../gsxx/18305.html" target="_blank" title="2020年第10批拟批准登记农药产品公示">2020年第10批拟批准登记...</a></li>
+      <li><a href="../gsxx/18162.html" target="_blank" title="登记延续友情提示（2020年10月）">登记延续友情提示（2020...</a></li>
+      <li><a href="../gsxx/18123.html" target="_blank" title="2020年第9批拟批准登记农药产品公示">2020年第9批拟批准登记...</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!--期刊科普&互动交流&政务服务&行业数据-->
+<div class="Book_ser">
+  <!--中部广告-->
+  <div class="Book_ser_top">
+    <div class="Book_ser_top_Ad1"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=8"></script></div>
+    <div class="Book_ser_top_Ad2"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=9"></script></div>
+    <div class="Book_ser_top_Ad3"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=10"></script></div>
+    <!--如果中部广告需要增加一排，可以调整book_ser_top样式的高度为132-->
+    <div class="Book_ser_top_Ad1 Book_ser_top_Ad4"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=247"></script></div>
+    <div class="Book_ser_top_Ad2 Book_ser_top_Ad4"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=248"></script></div>
+    <div class="Book_ser_top_Ad3 Book_ser_top_Ad4"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=249"></script></div>
+  </div>
+   <!--中部广告结束-->
+  <div class="Book_ser_right">
+    <div class="talk"><!--<a href="/mybbs/" target="_blank">--><img src="../r/cms/www/default/img/talk.gif" width="208" height="65"><!--</a>--></div>
+    <div class="Ser_govSer">
+      <div class="Ser_govSer_head">
+        <h1>政务服务</h1>
+      </div>
+      <div class="Ser_govSer_body1"><a href="javascript:;" target="_blank" id="s1"><span>金农工程应用系统专栏</span></a></div>
+      <div class="Ser_govSer_body1"><a href="javascript:;" target="_blank" id="s1"><span>全国农药执法服务系统</span></a></div>
+     
+      <div class="Ser_govSer_body1"><a href="javascript:;" target="_blank" id="s1"><span>风险监测和预警</span></a></div>
+     
+      <div class="Ser_govSer_body1"><a href="../myquery/fieldguide/fieldguide.html" target="_blank" id="s1"><span>田试区域指南(试行)</span></a></div>
+    </div>
+    <div class="Ser_data">
+    <div class="Ser_data_head">
+      <h1>行业数据</h1>
+    </div>
+    <div class="dataPic"><a href="../hysj/index.html" target="_blank"><img src="../r/cms/www/default/img/Ser_data01.gif" width="65" height="65"></a></div>
+    <div class="dataPic"><a href="javascript:;" target="_blank"><img src="../r/cms/www/default/img/Ser_data02.gif" width="65" height="65"></a></div>
+    <div class="dataPic"><a href="javascript:;" target="_blank"><img src="../r/cms/www/default/img/Ser_data-a.gif" width="65" height="65"></a></div>
+    <div class="dataPic"><a href="javascript:;" target="_blank"><img src="../r/cms/www/default/img/Ser_data-b.gif" width="65" height="65"></a></div>
+     <div class="dataPic"><a href="javascript:;" target="_blank"><img src="../r/cms/www/default/img/Ser_data05.gif" width="65" height="65"></a></div>
+    <div class="dataPic"><a href="javascript:;" target="_blank"><img src="../r/cms/www/default/img/Ser_data-c.gif" width="65" height="65"></a></div>
+    
+    </div>
+   
+  </div>
+  <div class="Book_ser_bottom">
+  <div class="Book_ser_bottom_head"><h1>期刊科普</h1></div>
+  <!--tab-->
+  <div class="Book_ser_bottom_left">
+  <div class="tabshow">
+	<div class="tabTagBox">
+		<ul class="tabTagList">
+			<li id="tag01" class="current"></li>
+			<li id="tag02"></li>
+			<li id="tag03"></li>
+			<li id="tag04"></li>			
+		</ul>
+	</div>
+       <!--期刊介绍-->
+         <div class="tabcon">
+          <div class="Book_1">
+            <h1>期刊介绍</h1>
+<p>《农药科学与管理》是由农业部主管，农业部农药检定所主办，国内外公开发行的农药行业专业期刊，也是中国科技核心期刊，主要宣传农药管理政策法规，介绍国内外农药领域的最新进展和科研成果，具有很强的政策性、科学性、指导性和实用性。</p>
+            
+          </div>
+        </div>
+        <!--理事会介绍-->
+        <div class="tabcon hide">
+          <div class="Book_1">
+            <h1>理事会介绍</h1>
+            <p>《农药科学与管理》理事会依据自愿、互助互利、共同发展的原则，由农药行业相关管理、科研、生产、经营和使用等单位共同组成。
+             理事会的主要任务是建立一个成员交流、互动、发展的协作平台，致力于提高《农药科学与管理》的质量和水平，加大农药行业相关
+            新闻、信息、科技、商业、政府等资源的开发利用，促进农药行业健康快速发展。<br></p><p><a href="javascript:;" target="_blank">查看理事会形象展示</a></p>
+          </div>
+        </div>
+        <!--目录和电子文稿-->
+	<div class="tabcon hide">
+          <div class="Book_1">
+            <h1>目录和电子文稿</h1>
+            <ul>
+              <li><a href="javascript:;" target="_blank">关于公布《农药科学与管理》、《农药登记...</a></li>
+              <li><a href="javascript:;" target="_blank">国际农药产品标准制修订最新动态和进展</a></li>
+              <li><a href="javascript:;" target="_blank">2017年第11期-国际农药标准制订及资料要...</a></li>
+              <li><a href="javascript:;" target="_blank">农药登记公告2017年第1期</a></li>
+              <li><a href="javascript:;" target="_blank">农药科学与管理2016年第12期</a></li>
+              <li><a href="javascript:;" target="_blank">农药登记公告2016年12期</a></li>
+              <li><a href="javascript:;" target="_blank">农药科学与管理2016年11期</a></li>
+              <li><a href="javascript:;" target="_blank">农药登记公告2016年11期</a></li>
+              <span style="float:right;"><a href="javascript:;" target="_blank">更多</a></span>
+            </ul>
+          </div>
+        </div>
+	<!--期刊管理系统-->
+         <div class="tabcon hide">
+          <div class="Book_1">
+            <h1>期刊管理系统</h1>
+<p><a href="javascript:;" target="_blank">点击进入期刊管理系统</a></p>
+          </div>
+        </div>
+
+</div><!--tabshow end-->
+  </div>
+  <div class="Book_ser_bottom_right">
+    <img src="../r/cms/www/default/img/book.png" width="172" height="211"> 
+    <a href="javascript:;" target="_blank">
+       <img style="margin-top:12px;" src="../r/cms/www/default/img/download.png" width="172" height="35">
+     </a>
+   </div>
+  </div>
+</div>
+<!--行业新闻结束-->
+
+<!--2015-11-11-->
+<!--新闻选项卡-->
+<div class="Main_ser_pubNews">
+<div class="Main_ser_pubNews_left">
+  <div class="box">
+    <div id="myFocus1">
+      <div class="loading"><span>请稍候...</span></div>
+      <!--载入画面-->
+      <ul class="btn">
+        <!--标题-->
+        <li style="margin-right:8px;">法规政策文件</li>
+        <li>执法信息</li>       
+      </ul>
+      <ul class="cont">
+        <!--内容-->
+        <li>
+          <ul>
+            <li id="spe"><span>2017-04-01</span><a href="../fgzcwj/7422.html" target="_blank" title="《农药管理条例》（2017年6月1日起施行）">《农药管理条例》（2017年6月1日起施行）</a></li>
+            <li id="spe"><span>2017-06-23</span><a href="../fgzcwj/8066.html" target="_blank" title="农药标签和说明书管理办法（2017年农业部令第7号）">农药标签和说明书管理办法（2017年农业部令第7号）</a></li>
+            <li id="spe"><span>2017-06-23</span><a href="../fgzcwj/8065.html" target="_blank" title="农药登记试验管理办法（2017年农业部令第6号）">农药登记试验管理办法（2017年农业部令第6号）</a></li>
+            <li id="spe"><span>2017-06-23</span><a href="../fgzcwj/8064.html" target="_blank" title="农药经营许可管理办法（2017年农业部令第5号）">农药经营许可管理办法（2017年农业部令第5号）</a></li>
+            <li id="spe"><span>2017-06-23</span><a href="../fgzcwj/8063.html" target="_blank" title="农药生产许可管理办法（2017年农业部令第4号）">农药生产许可管理办法（2017年农业部令第4号）</a></li>
+            <li id="spe"><span>2017-06-23</span><a href="../fgzcwj/8062.html" target="_blank" title="农药登记管理办法（2017年农业部令第3号）">农药登记管理办法（2017年农业部令第3号）</a></li>
+	    <li><span><a href="../fgzcwj/index.html" target="_blank">更多</a></span></li>
+	   </ul>
+        </li>       
+        <li>
+          <ul>
+            <li><span><a href="../zfxx/index.html" target="_blank">更多</a></span></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="Main_ser_pubNews_left" style="margin-left:13px;">
+  <div class="box">
+    <div id="myFocus2">
+      <div class="loading"><span>请稍候...</span></div>
+      <!--载入画面-->
+      <ul class="btn">
+        <!--标题-->
+        <li style="margin-right:8px;">征求意见</li>
+        <li>技术规范</li>       
+      </ul>
+      <ul class="cont">
+        <!--内容-->
+        <li>
+          <ul>
+            <li id="spe"><span>2020-11-12</span><a href="../zqyj/18502.html" target="_blank" title="农业农村部农药检定所关于征求农药登记药效试验准则国家标准修订意见的函">农业农村部农药检定所关于征求农药登记药效试验准则...</a></li>
+            <li id="spe"><span>2020-11-06</span><a href="../zqyj/18422.html" target="_blank" title="农业农村部农药检定所关于征求《农药缓释颗粒剂产品标准编写规范（征求意见稿）》等农业行业标准意见的函">农业农村部农药检定所关于征求《农药缓释颗粒剂产品...</a></li>
+            <li id="spe"><span>2020-10-30</span><a href="../zqyj/18365.html" target="_blank" title="农业农村部农药检定所关于征求农药登记药效试验农业行业标准意见的函">农业农村部农药检定所关于征求农药登记药效试验农业...</a></li>
+            <li id="spe"><span>2020-10-20</span><a href="../zqyj/18282.html" target="_blank" title="农业农村部农药检定所关于征求农药登记环境影响试验相关农业行业标准意见的函">农业农村部农药检定所关于征求农药登记环境影响试验...</a></li>
+            <li id="spe"><span>2020-10-15</span><a href="../zqyj/18244.html" target="_blank" title="农业农村部农药检定所关于征求 《农药每日允许摄入量（征求意见稿）》等农业行业标准意见的函">农业农村部农药检定所关于征求 《农药每日允许摄入...</a></li>
+            <li id="spe"><span>2020-09-29</span><a href="../zqyj/18125.html" target="_blank" title="农业农村部农药检定所关于征求《农药产品中有效成分含量测定通用分析方法-液相色谱法（征求意见稿）》农业行业标准意见的函">农业农村部农药检定所关于征求《农药产品中有效成分...</a></li>
+	   <li><span><a href="../zqyj/index.html" target="_blank">更多</a></span></li>
+	  </ul>
+        </li>       
+        <li>
+           <ul>
+            <li id="spe"><span>2020-06-24</span><a href="javascript:;" target="_blank" title="关于印发食品中农药最大残留限量标准的公告（GB 2763-2019）">关于印发食品中农药最大残留限量标准的公告（GB 276...</a></li>
+            <li id="spe"><span>2020-06-23</span><a href="../jsgf/17442.html" target="_blank" title=" 农药剂型名称及代码 GB∕T 19378-2017"> 农药剂型名称及代码 GB∕T 19378-2017</a></li>
+            <li id="spe"><span>2018-12-24</span><a href="../jsgf/12766.html" target="_blank" title="《食品安全国家标准 食品中百草枯等43种农药最大残留限量》 （GB 2763.1-2018）等9项食品安全国家标准（废止））">《食品安全国家标准 食品中百草枯等43种农药最大残...</a></li>
+            <li id="spe"><span>2016-06-30</span><a href="../jsgf/5785.html" target="_blank" title="农业部农药检定所关于印发《农药登记田间药效试验区域指南（试行）》的通知">农业部农药检定所关于印发《农药登记田间药效试验区...</a></li>
+            <li id="spe"><span>2015-12-22</span><a href="../jsgf/2990.html" target="_blank" title="农药剂型名称及代码（GB/T 19378-2003）（废止）">农药剂型名称及代码（GB/T 19378-2003）（废止）</a></li>
+            <li id="spe"><span>2015-11-27</span><a href="../jsgf/2150.html" target="_blank" title="联合国粮农组织发布农药管理新准则">联合国粮农组织发布农药管理新准则</a></li>
+	    <li><span><a href="../jsgf/index.html" target="_blank">更多</a></span></li>
+           </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+<!--2015-11-11-->
+<!--专题栏目-->
+<div class="Main_ser_theme">
+  <div class="Main_ser_theme_head">
+    <h1>专题栏目</h1>
+    <h2><a href="../ztlm/index.html" target="new">更多</a></h2>
+  </div>
+  <div class="Main_ser_theme_body">
+    <div class="Main_ser_theme_body_left">
+      <div class="Main_ser_theme_body_left_news">
+        <table width="410" border="0" cellspacing="0" cellpadding="0" style="padding-left:25px; padding-top:5px;">
+          <tr>
+            <td width="11%" rowspan="3"><img src="../u/cms/www/201509/17095727k9zq.jpg" width="120" height="90"></td>
+            <td width="2%" rowspan="3">&nbsp;</td>
+            <td width="87%" style="height:30px;"><h1>
+              党建活动
+              <h1></h1></h1></td>
+          </tr>
+          <tr>
+             <td class="spe"><p>落实党风廉政建设“两个责任”，全面开展“两学一做”学习教育，深入学习贯彻《问责条例》。<span><a href="../djhd/index.html" target="_blank">[详细内容]</a></span></p></td>
+             <!---->
+             
+          </tr>
+        </table>
+        <table width="410" border="0" cellspacing="0" cellpadding="0" style="padding-left:25px; padding-top:5px;">
+          <tr>
+            <td width="11%" rowspan="3"><img src="../u/cms/www/201801/03183131db1r.jpg" width="120" height="90"></td>
+            <td width="2%" rowspan="3">&nbsp;</td>
+            <td width="87%" style="height:30px;"><h1>
+              国际公约
+              <h1></h1></h1></td>
+          </tr>
+          <tr>
+             
+             <!--<td class="spe"><p>鹿特丹公约 斯德哥尔摩公约<span><a href="/topic/98.jspx" target="_blank">[详细内容]</a></span></p></td>-->
+             <td class="spe"><p>鹿特丹公约 斯德哥尔摩公约<span><a href="../gjgy/index.html" target="_blank">[详细内容]</a></span></p></td>
+          </tr>
+        </table>
+        
+      </div>
+    </div>
+    <div class="Main_ser_theme_body_right">
+     <!-- <p>
+      <a href="/topic/3.jspx" target="new">党建活动</a><span> | </span>
+      <a href="/topic/98.jspx" target="new">国际公约</a><span> | </span>
+      <a href="/topic/118.jspx" target="new">风险评估</a><span> | </span>
+      <a href="/topic/138.jspx" target="new">农药科管期刊</a><span> | </span>
+      <a href="/topic/158.jspx" target="new">精准扶贫</a><span> | </span>
+      <a href="/topic/8.jspx" target="new">零增长专栏</a><span> | </span>
+      <a href="/topic/9.jspx" target="new">科普宣传</a>
+      </p>-->
+      <ul>
+       <!-- 
+          <li><a href="http://www.chinapesticide.org.cn:80/zwdt/19023.jhtml" target="_blank" title="农业农村部农药检定所第六党支部参观纪念中国人民志愿军抗美援朝70周年主题展览">农业农村部农药检定所第六党支部参观纪念中国人...</a><span>2020-12-24</span></li>
+          <li><a href="http://www.chinapesticide.org.cn:80/zwdt4xw/19022.jhtml" target="_blank" title="农业农村部农药检定所第六党支部参观纪念中国人民志愿军抗美援朝70周年主题展览">农业农村部农药检定所第六党支部参观纪念中国人...</a><span>2020-12-24</span></li>
+          <li><a href="http://www.chinapesticide.org.cn:80/zwdt4xw/18384.jhtml" target="_blank" title="寻访红色圣地，感悟入党初心——第四、六支部联合开展党日活动">寻访红色圣地，感悟入党初心——第四、六支部联...</a><span>2020-11-02</span></li>
+          <li><a href="http://www.chinapesticide.org.cn:80/zwdt/17624.jhtml" target="_blank" title="陕西省农检中心党支部赴照金开展“七一”主题党日活动">陕西省农检中心党支部赴照金开展“七一”主题党...</a><span>2020-07-02</span></li>
+          <li><a href="http://www.chinapesticide.org.cn:80/dfdt/17542.jhtml" target="_blank" title="陕西省农检中心党支部赴照金开展“七一”主题党日活动">陕西省农检中心党支部赴照金开展“七一”主题党...</a><span>2020-07-02</span></li>
+          <li><a href="http://www.chinapesticide.org.cn:80/zwdt4xw/15406.jhtml" target="_blank" title="参观“伟大历程 辉煌成就——庆祝中华人民共和国成立70周年大型成就展”">参观“伟大历程 辉煌成就——庆祝中华人民共和...</a><span>2019-10-31</span></li>
+          <li><a href="http://www.chinapesticide.org.cn:80/zwdt/15405.jhtml" target="_blank" title="参观“伟大历程 辉煌成就——庆祝中华人民共和国成立70周年大型成就展”">参观“伟大历程 辉煌成就——庆祝中华人民共和...</a><span>2019-10-31</span></li>
+         -->
+          
+          
+           <li><a href="../djhd/index.html" target="_blank" title="党建活动：落实党风廉政建设“两个责任”，全面开展“两学一做”学习教育，深入学习贯彻《问责条例》。">党建活动：落实党风廉政建设“两个责任”，全面开展“...</a></li>
+          
+          
+          
+          
+           <li><a href="../gjgy/index.html" target="_blank" title="国际公约：鹿特丹公约 斯德哥尔摩公约">国际公约：鹿特丹公约 斯德哥尔摩公约</a></li>
+          
+           <li><a href="../topic/118.html" target="_blank" title="风险评估：">风险评估：</a></li>
+          
+          
+          
+           <li><a href="../topic/138.html" target="_blank" title="农药科管期刊：">农药科管期刊：</a></li>
+          
+          
+          
+           <li><a href="../topic/158.html" target="_blank" title="精准扶贫：精准扶贫，全面脱困">精准扶贫：精准扶贫，全面脱困</a></li>
+          
+          
+          
+           <li><a href="../topic/8.html" target="_blank" title="零增长专栏：推动2020年化肥农药使用零增长">零增长专栏：推动2020年化肥农药使用零增长</a></li>
+          
+          
+          
+           <li><a href="../topic/9.html" target="_blank" title="科普宣传：科普宣传专题。">科普宣传：科普宣传专题。</a></li>
+          
+          
+          
+           <li><a href="../topic/10.html" target="_blank" title="CCPR：CCPR专题，CCPR相关材料">CCPR：CCPR专题，CCPR相关材料</a></li>
+          
+          
+          
+           <li><a href="../topic/11.html" target="_blank" title="GLP：非临床健康和环境安全试验是评价化学品（包括农药）危害性的基础，其科学、公正性一直是各国政府和工业企...">GLP：非临床健康和环境安全试验是评价化学品（包...</a></li>
+          
+          
+      </ul>
+    </div>
+   
+  </div>
+
+</div>
+
+<script>
+function change(obj){
+ // alert(obj.options[obj.selectedIndex].value);
+  var val=obj.options[obj.selectedIndex].value;
+  var vals=val.split('^');
+  if(vals[0]!="#"){
+    $.get('/friendlink_view.jspx?id=vals[1]');
+    window.open(vals[0]);
+ }
+}
+</script>
+<!--链接-->
+<div class="link">
+  <div class="link_head">
+    <h1>链接</h1>
+    <a href="javascript:;" onclick="$.get('/friendlink_view.jspx?id=1')" target="_blank"><img style="margin-top:8px; margin-left:7px;" src="../u/cms/www/201509/23143348ggwk.gif" alt="中国政府网" width="118" height="37"></a>
+    <div class="l1">
+      <select name="link1" onchange="change(this)">
+        <option value="#">国际（地区）</option>
+           <option value="http://apvma.gov.au/^9">澳大利亚农兽药管理局</option>
+           <option value="http://www.epa.gov/^48">美国环保署</option>
+           <option value="http://www.efsa.europa.eu/en/panels/pesticides^8">欧盟食品安全局</option>
+      </select>
+    </div>
+     <div class="l1">
+      <select name="link1" onchange="change(this)">
+        <option value="#">国家</option>
+          <option value="http://www.miit.gov.cn/^27">中国工信部</option>
+          <option value="http://www.aqsiq.gov.cn/^28">国家质检总局</option>
+          <option value="http://www.moa.gov.cn/^7">农业农村部</option>
+        
+      </select>
+    </div>
+     <div class="l1">
+      <select name="link1" onchange="change(this)">
+        <option value="#">地方</option>
+          <option value="http://ny.hnagri.gov.cn/website/HuNan_NY/default.aspx^32">湖南省农药检定所</option>
+          <option value="http://www.heica.gov.cn^34">河北省农药检定所</option>
+          <option value="http://www.nmgzbz.com/^47">内蒙古自治区农药检..</option>
+          <option value="http://www.ahny.gov.cn/^43">安徽省农业信息网</option>
+          <option value="http://www.cqzzzb.cn/^44">重庆市农药检定所</option>
+          <option value="http://www.gxzb.com/^45">广西自治区农药检定..</option>
+          <option value="http://www.xj-agri.gov.cn/nongyjd/index.jhtml^39">新疆自治区农药检定所</option>
+          <option value="http://www.sdica.com/^29">山东省农药检定所</option>
+          <option value="http://www.icasx.com/^30">陕西省农药检定管理所</option>
+          <option value="http://www.jsagri.gov.cn/icajs/^38">江苏省农药检定所</option>
+          <option value="http://www.jxszbzjj.gov.cn/^41">江西省农药管理局</option>
+          <option value="http://www.ipm.org.cn/^42">湖北省农药检定管理所</option>
+          <option value="http://www.fjagri.gov.cn/html/^46">福建农业信息网</option>
+      </select>
+    </div>
+     <div class="l1">
+      <select name="link1" onchange="change(this)">
+        <option value="#">其他</option>
+          <option value="http://www.ccpia.org.cn^35">中国农药工业协会</option>
+          <option value="http://cn.agropages.com/^36">世界农化网</option>
+          <option value="http://szb.farmer.com.cn/nmrb/^37">农民日报</option>
+          <option value="http://www.zgnyxh.org.cn/^33">中国农药发展与应用..</option>
+      </select>
+    </div>
+    <div class="l2" style="text-align:center">
+	<img src="../r/cms/www/default/img/wx.jpg" width="92" height="92">	
+    </div>
+    <div class="l2" style="text-align:center">
+	<span>官方微信：中国农药</span>
+    </div>
+  </div>
+</div><!--底部广告-->
+<div class="cls"></div>
+<div class="footad">
+  <div> <script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=267"></script></div>
+  <div class="ad"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=268"></script></div>
+  <div class="ad"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=269"></script></div>
+  <div class="ad"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=270"></script></div>
+
+</div>
+<div class="footad">
+  <div> <script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=271"></script></div>
+  <div class="ad"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=272"></script></div>
+  <div class="ad"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=273"></script></div>
+  <div class="ad"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=274"></script></div>
+
+</div>
+    
+
+<!--版权-->
+<div class="cls"></div>
+<div style="position:absolute;margin-top:20px;margin-left:140px;"><p><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/33/000/0000/60899022/CA330000000608990220002.js' type='text/javascript'%3E%3C/script%3E"));</script></p></div>
+<div class="copyRight">
+  <p>版权所有：中华人民共和国农业农村部农药检定所</p>
+  <p>网站管理：农业农村部农药检定所药情信息处　备案序号：京ICP备05008494号</p>
+  <p>广告推广：北京灵悦伟业文化发展有限公司   电话：010-62153165<a href="  " target="_blank">  </a></p>
+  <p>地址：北京市朝阳区麦子店22号　邮编：100125 电话：010-59194018</p>
+  <p>网站保留所有权，未经许可不得复制，镜像</p>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+ul, li {
+	list-style: none;
+}
+a {
+	COLOR: #224364;
+	TEXT-DECORATION: none;
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	BORDER-TOP-STYLE: none;
+	PADDING-TOP: 0px;
+	BORDER-RIGHT-STYLE: none;
+	BORDER-LEFT-STYLE: none;
+	BORDER-BOTTOM-STYLE: none;
+	font: 微软雅黑;
+}
+.tabCon a:hover {
+	COLOR:#458ad1 !important;
+	font: 微软雅黑;
+	font-size: 13px;
+}
+#tab {
+	position: relative;
+	height: 294px;
+	float: left;
+	width:478px;
+}
+#tabc {
+	position: relative;
+	height:350px;
+	float: left;
+	width:478px;
+}
+#tabcd {
+	position: relative;
+	height:170px;
+	float: left;
+	width:478px;
+}
+.tabList {
+	background: url(../images/sanh_top_bj.jpg) repeat-x;
+	height:55px;
+	width: 478px;
+	line-height:55px;
+}
+.tabList ul li {
+	position: relative;
+	cursor: pointer;
+	height: 55px;
+	color: #000000;
+	float: left;
+	font: 微软雅黑;
+	font-size: 18px;
+	font-weight:bold;
+	padding:0 10px;
+}
+.tabList li.cur {
+	border-bottom: none;
+	height: 55px;
+	color: #1a59a9;
+	float: left;
+	font: 微软雅黑;
+	font-size: 18px;
+	padding:0 10px;
+}
+.tabCon {
+	position: absolute;
+	top:60px;
+	border-top: none;
+	width: 478px;
+	font-size: 13px;
+}
+.tabCon div {
+	position: absolute;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	width: 478px;
+}
+.tabCon div.cur {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.tabCon li {
+	background: url("../images/line_bg.png") repeat-x scroll center bottom transparent;
+	float: none;
+	height: 40px;
+	line-height: 40px;
+}
+.fengx {
+	width:3px;
+	float:left;
+	color:#333;
+}
+.fengxx{
+	width:4px;
+	float:left;
+	color:#3eb9ff;
+	margin:0 3px;
+}
+#qud ul li a, #qud ul li a:link, #qud ul li a:hover {
+	background: none;
+	padding-left: 10px;
+	display:block;
+}
+#qud ul li a img, #qud ul li a:link img, #qud ul li a:hover img {
+	width:18px;
+	height:18px;
+	line-height:40px;
+
+}
+#jiad ul li a:link, #jiad ul li a:hover {
+	background: url("../images/img10.gif") no-repeat scroll left center transparent;
+}
+
+#img111 ul li a, #img111 ul li a:link, #img111 ul li a:hover {
+    background: url("../images/img111.gif") no-repeat scroll left center transparent;
+    padding-left: 10px;
+    }

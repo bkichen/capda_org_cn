@@ -1,0 +1,416 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html style="overflow-x:auto;overflow-y:auto;">
+<head>
+	<title>田间药效试验区域指南</title>
+	<!-- <link href="../../style/css.css" rel="stylesheet" type="text/css" />  -->
+	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="中国农药信息网">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=8,IE=9,IE=10">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-store">
+<script src="../../r/cms/www/default/js/jquery.js" type="text/javascript"></script>
+<link href="../static/bootstrap/2.3.1/css_united/bootstrap.css" type="text/css" rel="stylesheet">
+<script src="../static/bootstrap/2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+<!--<link href="/myquery/static/bootstrap/2.3.1/awesome/font-awesome.min.css" type="text/css" rel="stylesheet" /> -->
+<!--[if lte IE 7]><link href="/scripts/bootstrap/2.3.1/awesome/font-awesome-ie7.min.css" type="text/css" rel="stylesheet" /><![endif]-->
+<!--[if lte IE 6]><link href="/scripts/bootstrap/bsie/css/bootstrap-ie6.min.css" type="text/css" rel="stylesheet" />
+<script src="/scripts/bootstrap/bsie/js/bootstrap-ie.min.js" type="text/javascript"></script><![endif]-->
+<link href="../static/jquery-select2/3.4/select2.min.css" rel="stylesheet">
+<script src="../static/jquery-select2/3.4/select2.min.js" type="text/javascript"></script>
+<link href="../static/jquery-validation/1.11.0/jquery.validate.min.css" type="text/css" rel="stylesheet">
+<script src="../static/jquery-validation/1.11.0/jquery.validate.min.js" type="text/javascript"></script>
+<link href="../static/jquery-jbox/2.3/Skins/Bootstrap/jbox.min.css" rel="stylesheet">
+<script src="../static/jquery-jbox/2.3/jquery.jBox-2.3.min.js" type="text/javascript"></script>
+<script src="../static/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
+<script src="../static/common/mustache.min.js" type="text/javascript"></script>
+<link href="../static/common/sintra.min.css" type="text/css" rel="stylesheet">
+<script src="../static/common/sintra.min.js" type="text/javascript"></script>
+<script type="text/javascript">var ctx = '/myquery/a', ctxStatic='/myquery/static';</script>
+	
+<meta name="decorator" content="blank">
+	<script type="text/javascript" src="../../api-2.0_YdV1YGUrFmlIusAFN3CEF6PH.js"></script>
+	<style>
+		@charset "utf-8";
+		* {margin: auto;padding: 0px;}
+		/*服务版 搜索页*/
+		.maindiv{text-align:left;width:100%; border:0px solid #c5c5c5;  background-color:#FFF;}
+		.maindiv p{text-indent:2em;font-size:13px; text-align:left; margin-top:0px; color:#262626;}
+		.maindiv h2{margin-top:10px 20px 0px 20px; border-bottom:1px solid #c5c5c5;  }
+		.leftdiv{text-align:left;margin-top:2px;margin-left:10px;width:31%}
+		.allmap {width:78%;max-height:82%;min-height:76%;height:480px;overflow: hidden;border:1px solid #c5c5c5;margin-right:0px;margin-top:-3px;font-family:"微软雅黑";float:right;}
+		select{font-size: 13px;}
+	</style>
+	<script type="text/javascript">
+	var allcount=10;
+	function loadzwtype(){
+		
+		$("#zwtype").empty();
+    	$("#zwtype").append("作物分类：");
+    	$("#zwtype").append("<select id='zwtypes' class='input-small' onchange='selectzwtype();'></select>");
+    	$("#zwtypes").append("<option value=>请选择</option> <option value='1'>粮食作物</option> <option value='2'>经济作物</option> <option value='3'>油料作物</option> <option value='4'>蔬菜</option> <option value='5'>果树</option>");
+	}
+	//根据作物类型，填充作物的下拉框
+	function selectzwtype(){
+		var selectId = $('#zwtypes>option:selected');
+		//alert(selectId.val());
+		$.ajax( {  
+	        type : "GET",  
+	        url : "fdgetzwbytype",  
+	        dataType:"json",  
+	        data:
+	        {
+	        	typeid:selectId.val()
+	        	//rowcount:"6"
+	       	},
+	        success : function(msg) {
+	        	//alert("a");
+	        	$("#zw").empty();
+	        	
+	        	$("#zw").append("&nbsp;&nbsp;&nbsp;农作物：");
+	        	$("#zw").append("<select id='zws' class='input-small' onchange='selectzw();'> </select>");
+	        	$("#zws").append("<option value='' selected='selected'>请选择作物</option>");
+	        	//alert(msg.length);
+	        	for(var i=0;i<msg.length;i++){
+	        		$("#zws").append("<option value='"+msg[i].ZWID+"'>"+msg[i].ZWNAME+"</option>");
+	        	}
+	        	selectzw();
+	        },
+	        error:function(XMLHttpRequest, textStatus, errorThrown){
+	        	alert(textStatus);
+	        }
+	       	
+		});		
+	}
+	//根据农作物，填充病虫害的下拉框
+	function selectzw(){
+		
+		var selectId = $('#zws>option:selected');
+		//alert(selectId.val());
+		$.ajax( {  
+	        type : "GET",  
+	        url : "fdgetbchbyzw",  
+	        dataType:"json",  
+	        data:
+	        {
+	        	zwid:selectId.val()
+	        	//rowcount:"6"
+	       	},
+	        success : function(msg) {
+	        	$("#bch").empty();
+	        	
+	        	$("#bch").append("&nbsp;&nbsp;&nbsp;病虫害：");
+	        	$("#bch").append("<select id='bchs' class='input-medium' onchange='selectbch();'> </select>");
+	        	$("#bchs").append("<option value='' selected='selected'>请选择病虫害</option>");
+	        	//alert(msg.length);
+	        	for(var i=0;i<msg.length;i++){
+	        		$("#bchs").append("<option value='"+msg[i].BCHID+"'>"+msg[i].BCHNAME+"</option>");
+	        	}	
+	        	selectbch();
+	        },
+	        error:function(XMLHttpRequest, textStatus, errorThrown){
+	        	alert(textStatus);
+	        }
+	       	
+		});		
+	}
+	function selectbch(){
+		$("#sm").empty();//清空说明区域
+		$("#qy").empty();//清空区域按钮的
+		$("#message").empty();//清空提示信息
+		madeBoundary();//重置下地图选择
+		var selectId = $('#bchs>option:selected');
+		$("#qy").empty();
+		$.ajax( {  
+	        type : "GET",  
+	        url : "fdgetbchbyid",  
+	        dataType:"json",  
+	        data:
+	        {
+	        	bchid:selectId.val()
+	       	},
+	        success : function(msg) {
+	        	if(msg.length>0){
+	        		allcount=msg[0].ALLCOUNT;
+	        		$("#sm").append("说明："+msg[0].REMARK);
+	        		for(var i=0;i<msg[0].ALLCOUNT;i++){
+	        			var htmlstr="<div class='leftdiv' style='margin-top:15px;width:100%;' id='qy"+(i+1)+"'>"+
+	        			"<input type='button' class='btn' id='btn"+(i+1)+"' value='选择试验点"+(i+1)+"' onclick='selectsf(this);'/>"+
+	        			"<span style='margin-left:10px;' name='spanqysf'></span>"+
+	        			"<input name='sqy' type='hidden' value='' />"+
+	        			"<input name='ssf' type='hidden' value=''/>"+
+	        			"<input name='groupid' type='hidden' value=''/>"+
+	        			"</div>";
+	        			//alert(htmlstr);
+	        			$("#qy").append(htmlstr);
+	        		}
+	        	}
+	        },
+	        error:function(XMLHttpRequest, textStatus, errorThrown){
+	        	alert(textStatus);
+	        }
+	       	
+		});	
+		//alert("a");
+	}
+	function selectsf(obj){
+		var sqy="";
+		$("input[name='sqy']").each(
+			function(){
+				if($(this).val()!=""){
+				sqy+=$(this).val()+",";
+				}
+			}
+		);
+		var ssf="";
+		$("input[name='ssf']").each(
+			function(){
+				if($(this).val()!=""){
+				ssf+=$(this).val()+",";
+				}
+			}
+		);
+		var groupid="";
+		$("input[name='groupid']").each(
+			function(){
+				if($(this).val()!=""){
+				groupid+=$(this).val()+",";
+				}
+			}
+		);
+		var bch=$('#bchs>option:selected').val();
+		var zw=$('#zws>option:selected').val();
+		
+		//alert(sqy);
+		//alert(ssf);
+		//alert(bch);
+		//alert(zw);
+		//alert($(top.document.body).height());
+		$.jBox.open("iframe:/myquery/fieldguide/fieldselect?qy="+sqy+"&sf="+ssf+"&bch="+bch+"&zw="+zw+"&groupid="+groupid, "选择试验点", 700, 520, {
+						
+			buttons:{"确定":"ok",  "关闭":true}, submit:function(v, h, f){
+	            if (v=="ok"){
+	            	$("#message").empty();//清空提示信息
+	            	var ids = h.find("iframe")[0].contentWindow.$("#selected").val();
+	            	var groupid = h.find("iframe")[0].contentWindow.$("#groupid").val();
+	            	var names=h.find("iframe")[0].contentWindow.$("#qyandsfstr").text();
+	            	//alert(pdno);
+	            	if(ids!=""){
+		            	$(obj).parent().children().eq(1).text(names);//区域-省份-部
+		            	
+		            	$(obj).parent().children().eq(2).val(ids.split(':')[0]);//区域id
+		            	$(obj).parent().children().eq(3).val(ids.split(':')[1]);//省份id
+		            	$(obj).parent().children().eq(4).val(groupid);//如果非必选，则有groupid
+		            	$(obj).parent().append("<input type='button' value='查看试验单位' id='"+ids.split(':')[1]+":"+names.split('-')[1]+"' style='margin-left:5px;' class='btn btn-primary' onclick='viewsydw(this);'/>");
+		            	//alert("<input type='button' value='查看试验单位' id='"+ids.split(':')[1]+":"+names.split('-')[1]+"' style='margin-left:5px;' class='btn btn-primary' onclick='viewsydw(this);'/>");
+		            	$(obj).hide();
+		            	
+		            	madeBoundary();
+	            	}
+	            }
+	        }, loaded:function(h){
+	            $(".jbox-content", top.document).css("overflow-y","hidden");
+	        }
+	    });
+	}
+	function viewsydw(obj){
+		var id=$(obj).attr('id');
+		//alert(id);
+		var sfid=id.split(":")[0];
+		var sfmc=id.split(":")[1];
+		
+		$.jBox.open("iframe:/myquery/fieldguide/fieldviewsydw?sf="+sfid, sfmc+"试验单位", 700, 520,{
+  			loaded:function(h){
+                  $(".jbox-content", top.document).css("overflow-y","hidden");
+              }
+          });
+	}
+	function page(n,s){
+		$("#pageNo").val(n);
+		$("#pageSize").val(s);
+		$("#searchForm").submit();
+    	return false;
+    }
+	//选择确定
+    function selok(){
+    	var ssf=false;
+    	
+    	var selcount=0;
+		$("input[name='ssf']").each(
+			function(){
+				if($(this).val()!=""){
+					selcount++;
+				}
+			}
+			
+		);	
+		if(allcount==selcount){
+			ssf=true;
+		}
+		if(ssf==true){
+			$("#message").html("您的选择符合《指南》要求！");
+		}
+		else{
+			$("#message").html("您未完成选择！");
+		}
+    }
+	</script>
+</head>
+<body onload="loadzwtype();">
+
+	
+	<div class="maindiv">
+      <p>为指导农药登记申请人科学选择农药登记药效试验地点，根据《农药管理条例》《农药登记资料规定》，结合我国主要农作物种植区域布局和病虫草害发生规律，特制定《农药登记田间药效试验区域指南（试行）》（以下简称《指南》）。</p>
+      <p>《指南》适用于农药登记田间药效试验点的选择，包括我国20种主要农作物及140余种主要病虫草害。因病虫草害发生等情况变化，本《指南》推荐的田间药效试验区域不能满足登记试验要求时，登记申请人可以根据实际情况，自行调整，并在申请农药登记时提供关于试验地点选择的说明。</p>
+      <p>《指南》未包含的作物、病虫草害及一些特殊药剂，如草原、滩涂、林业用药剂，植物生长调节剂、杀鼠剂、灭生除草用药剂等，可根据作物种植区域，在全国选择有代表性的地点（省份）进行田间药效试验。
+对于特色小宗作物、局部地区发生的病虫草害，可根据具体情况，选择不同省份进行登记药效试验，或者在同一省份内选择多个试验地点开展田间药效试验。</p>
+      <h2></h2>
+	<form id="searchForm" action="fieldtestdetail" method="post">
+		<div id="allmap" class="allmap"></div>
+		<script type="text/javascript">   
+		
+        var map = new BMap.Map("allmap");  
+        var map = new BMap.Map("allmap",{minZoom:4,maxZoom:7}); // 创建Map实例,设置地图允许的最小/大级别
+        var point = new BMap.Point(103.404, 34.915);  
+        map.centerAndZoom(point,5);  
+        map.enableScrollWheelZoom(); 
+        map.addControl(new BMap.NavigationControl()); // 添加平移缩放控件
+        map.addControl(new BMap.OverviewMapControl());              //添加缩略地图控件
+ 
+    	
+        function resetqy(){
+    		selectbch();
+    		map.clearOverlays();
+    	}
+        function madeBoundary() {
+        	var datas=new Array();
+        	var colors=new Array("#665599","#559955","#666ddd","#1199cc","#1123cc","#529cc","#432ca");//设置不同的颜色，如果超过6个，会出错，需要再增加一个颜色的
+        	map.clearOverlays();
+        	var iddatas=new Array();
+        	$("input[name='ssf']").each(
+       			function(){
+       				if($(this).val()!=""){
+       					iddatas.push($(this).val());
+       				}
+       			}
+        	);
+        	//alert(iddatas);
+        	var i=0;
+        	$("span[name='spanqysf']").each(
+       			function(){
+       				if($(this).text()!=""){
+       					var text=$(this).text().split("-")[1];
+       					//alert(text);
+       					if(text=="吉林"){//因为吉林有吉林市
+       						text="吉林省";
+       					}
+       					datas.push(text+"-"+colors[i]);
+       					i++;
+       				}
+       			}
+        	);
+        		//alert(datas);
+            //var datas = new Array("西藏-#665599","陕西-#559955","海南-#666ddd","山东-#1199cc");
+            var bdary = new BMap.Boundary();
+            for(var i=0;i<datas.length;i++){
+            	getBoundary(datas[i],bdary,iddatas[i]);
+        	} 
+        } 
+        //设置区域图
+        function getBoundary(data,bdary,id){    
+          data = data.split("-");
+            bdary.get(data[0], function(rs){       //获取行政区域
+                var count = rs.boundaries.length; //行政区域的点有多少个
+                var pointArray = [];
+                for (var i = 0; i < count; i++) {
+                    var ply = new BMap.Polygon(rs.boundaries[i], {strokeWeight: 2, strokeColor: "#ff0000",fillOpacity:0.5,fillColor:data[1]}); //建立多边形覆盖物
+                    //var label=new BMap.Label(data[0],{position:map.getCenter()});
+                    //ply.addEventListener('mouseover',function(){map.addOverlay(label)});
+                    //ply.addEventListener('mouseout',function(){map.removeOverlay(label)}) ;
+                    ply.addEventListener('click', function (e) {
+                    	  $.jBox.open("iframe:/myquery/fieldguide/fieldviewsydw?sf="+id, data[0]+"试验单位", 700, 520,{
+                  			loaded:function(h){
+                                  $(".jbox-content", top.document).css("overflow-y","hidden");
+                              }
+                          });
+                    	  //alert(id);
+                    	  //alert(data);
+                          //alert('单击点的坐标为：' + e.point.lng + ',' + e.point.lat);  // 监听点击事件
+                     });
+                    map.addOverlay(ply);  //添加覆盖物
+                }               
+            }); 
+        }
+        
+    	</script>  
+		<!-- 作物分类 -->
+		<div class="leftdiv" id="zwtype" style="width:280px;">
+			作物分类：
+		</div>
+		<!-- 农作物 -->
+		<div class="leftdiv" id="zw" style="width:280px;">
+			&nbsp;&nbsp;&nbsp;农作物：
+		</div>
+		<!-- 病虫害 -->
+		<div class="leftdiv" id="bch" style="width:280px;">
+			&nbsp;&nbsp;&nbsp;病虫害：
+		</div>
+		<!-- 说明 -->
+		<div class="leftdiv" id="sm" style="width:280px;">
+		</div>
+		<!-- 区域 -->
+		<div class="leftdiv" id="qy" style="width:280px;">
+		</div>
+		<div class="leftdiv" style="margin-top:20px;">
+		
+		
+		<input type="button" onclick="selok();" style="margin-top:5px;" class="btn btn-primary" value="确定">
+		<input type="button" onclick="resetqy();" style="margin-top:5px;margin-left:10%;" class="btn btn-primary" value="重置试验点">
+		</div>
+		<div class="leftdiv" id="message" style="margin-top:5px;">
+		
+		</div>
+	</form>
+	</div>
+	
+	
+</body>
+<script type="text/javascript">
+
+</script>
+</html>

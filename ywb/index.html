@@ -1,0 +1,744 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Home - China Pesticide Information Network - Powered by ICAMA</title>
+<meta http-equiv="keywords" content="">
+<meta http-equiv="description" content="">
+<head>
+<!--[if lt IE 9]>
+<script src="/r/cms/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link href="../r/cms/www/default/css/css.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../r/cms/www/default/js/jquery.js"></script>
+<script type="text/javascript" src="../r/cms/www/default/js/focus1.js"></script>
+<link href="../r/cms/jqueryUI/jquery.ui.css" rel="stylesheet" type="text/css">
+<script src="../r/cms/jquery.js" type="text/javascript"></script>
+<script src="../r/cms/jqueryUI/jquery-ui.js" type="text/javascript"></script>
+<script src="../r/cms/front.js" type="text/javascript"></script>
+<script src="../r/cms/www/default/js/common.js" type="text/javascript"></script>
+<script language="JavaScript">var _trackDataType = 'web';var _trackData = _trackData || [];</script>
+<script type="text/javascript" id="kpyfx_js_id_10004090" src="../count/10004090/10004090.js"></script>
+<script type="text/javascript">
+$(function() {
+	Cms.siteFlow("", location.href, document.referrer);
+	$.cookie("_site_id_cookie","1",{path: '' });
+        var topNum = parseInt($("#img").css("top")+"");
+        $(window).scroll(function(){
+          var scrollTopNum = $(window).scrollTop();
+          $("#img").stop(true,false).delay(200).animate({top:scrollTopNum+topNum},"slow");
+        });
+});
+function closeWindow(){ 
+  $(".winTitle").hide(); 
+  $(".winContent").hide(); 
+} 
+</script>
+<style>
+    .winTitle{background:#d0d0d0; height:20px; line-height:20px} 
+   .winTitle .title_left{font-weight:bold; color:#FFF; padding-left:5px; float:left} 
+   .winTitle .title_right{float:right} 
+   .winTitle .title_right a{color:#000; text-decoration:none} 
+   .winTitle .title_left a{color:#000; text-decoration:none} 
+   .winTitle .title_right a:hover{text-decoration:underline; color:#FF0000} 
+   .winTitle .title_left a:hover{text-decoration:underline; color:#FF0000} 
+   .winContent{padding:5px;border:1px solid #d0d0d0;} 
+</style>
+<script type="text/javascript">
+var Speed_1 = 10; //速度(毫秒)
+var Space_1 = 2; //每次移动(px)
+var PageWidth_1 = 1 * 3; //翻页宽度
+var interval_1 = 100; //翻页间隔时间
+var fill_1 = 0; //整体移位
+var MoveLock_1 = false;
+var MoveTimeObj_1;
+var MoveWay_1="right";
+var Comp_1 = 0;
+var AutoPlayObj_1=null;
+function GetObj(objName){
+	if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}
+}
+function AutoPlay_1(){
+	clearInterval(AutoPlayObj_1);AutoPlayObj_1=setInterval('ISL_GoDown_1();ISL_StopDown_1();',interval_1)
+}
+function ISL_GoUp_1(){
+	if(MoveLock_1)return;
+	clearInterval(AutoPlayObj_1);
+	MoveLock_1=true;
+	MoveWay_1="left";
+	MoveTimeObj_1=setInterval('ISL_ScrUp_1();',Speed_1);
+}
+function ISL_StopUp_1(){
+	if(MoveWay_1 == "right"){return};
+	clearInterval(MoveTimeObj_1);
+	if((GetObj('ISL_Cont_1').scrollLeft-fill_1)%PageWidth_1!=0){
+		Comp_1=fill_1-(GetObj('ISL_Cont_1').scrollLeft%PageWidth_1);CompScr_1()
+	}else{
+		MoveLock_1=false
+	}
+	AutoPlay_1()
+}
+function ISL_ScrUp_1(objName){
+	if(GetObj('ISL_Cont_1').scrollLeft<=0){
+		GetObj('ISL_Cont_1').scrollLeft=GetObj('ISL_Cont_1').scrollLeft+GetObj('List1_1').offsetWidth}
+GetObj('ISL_Cont_1').scrollLeft-=Space_1}
+
+function ISL_GoDown_1(){
+	clearInterval(MoveTimeObj_1);
+	if(MoveLock_1)return;
+	clearInterval(AutoPlayObj_1);
+	MoveLock_1=true;
+	MoveWay_1="right";
+	ISL_ScrDown_1();
+	MoveTimeObj_1=setInterval('ISL_ScrDown_1()',Speed_1);
+}
+function ISL_StopDown_1(){
+	if(MoveWay_1 == "left"){return};
+	clearInterval(MoveTimeObj_1);
+	if(GetObj('ISL_Cont_1').scrollLeft%PageWidth_1-(fill_1>=0?fill_1:fill_1+1)!=0){
+		Comp_1=PageWidth_1-GetObj('ISL_Cont_1').scrollLeft%PageWidth_1+fill_1;CompScr_1()
+	}else{MoveLock_1=false}
+	AutoPlay_1();
+}
+function ISL_ScrDown_1(){
+	if(GetObj('ISL_Cont_1').scrollLeft>=GetObj('List1_1').scrollWidth){
+		GetObj('ISL_Cont_1').scrollLeft=GetObj('ISL_Cont_1').scrollLeft-GetObj('List1_1').scrollWidth;
+	}
+	GetObj('ISL_Cont_1').scrollLeft+=Space_1;
+}
+function CompScr_1(){
+	if(Comp_1==0){MoveLock_1=false;return}
+	var num,TempSpeed=Speed_1,TempSpace=Space_1;
+	if(Math.abs(Comp_1)<PageWidth_1/2){
+		TempSpace=Math.round(Math.abs(Comp_1/Space_1));
+		if(TempSpace<1){TempSpace=1}
+	}
+	if(Comp_1<0){
+		if(Comp_1<-TempSpace){
+			Comp_1+=TempSpace;num=TempSpace
+		}else{
+			num=-Comp_1;
+			Comp_1=0
+		}
+		GetObj('ISL_Cont_1').scrollLeft-=num;setTimeout('CompScr_1()',TempSpeed)
+	}else{
+		if(Comp_1>TempSpace){
+			Comp_1-=TempSpace;num=TempSpace}
+		else{
+			num=Comp_1;
+			Comp_1=0;
+		}
+		GetObj('ISL_Cont_1').scrollLeft+=num;
+		setTimeout('CompScr_1()',TempSpeed)
+	}
+}
+function picrun_ini(){
+	GetObj("List2_1").innerHTML=GetObj("List1_1").innerHTML;
+	GetObj('ISL_Cont_1').scrollLeft=fill_1>=0?fill_1:GetObj('List1_1').scrollWidth-Math.abs(fill_1);
+	GetObj("ISL_Cont_1").onmouseover=function(){clearInterval(AutoPlayObj_1)}
+	AutoPlay_1();
+}
+</script>
+<script type="text/javascript">
+var Speed_2 = 10; //速度(毫秒)
+var Space_2 = 2; //每次移动(px)
+var PageWidth_2 = 1 * 3; //翻页宽度
+var interval_2 = 100; //翻页间隔时间
+var fill_2 = 0; //整体移位
+var MoveLock_2 = false;
+var MoveTimeObj_2;
+var MoveWay_2="right";
+var Comp_2 = 0;
+var AutoPlayObj_2=null;
+
+function AutoPlay_2(){
+	clearInterval(AutoPlayObj_2);AutoPlayObj_2=setInterval('ISL_GoDown_2();ISL_StopDown_2();',interval_2)
+}
+function ISL_GoUp_2(){
+	if(MoveLock_2)return;
+	clearInterval(AutoPlayObj_2);
+	MoveLock_2=true;
+	MoveWay_2="left";
+	MoveTimeObj_2=setInterval('ISL_ScrUp_2();',Speed_2);
+}
+function ISL_StopUp_2(){
+	if(MoveWay_2 == "right"){return};
+	clearInterval(MoveTimeObj_2);
+	if((GetObj('ISL_Cont_2').scrollLeft-fill_2)%PageWidth_2!=0){
+		Comp_2=fill_2-(GetObj('ISL_Cont_2').scrollLeft%PageWidth_2);CompScr_2()
+	}else{
+		MoveLock_2=false
+	}
+	AutoPlay_2()
+}
+function ISL_ScrUp_2(objName){
+	if(GetObj('ISL_Cont_2').scrollLeft<=0){
+		GetObj('ISL_Cont_2').scrollLeft=GetObj('ISL_Cont_2').scrollLeft+GetObj('List1_2').offsetWidth}
+GetObj('ISL_Cont_2').scrollLeft-=Space_2}
+
+function ISL_GoDown_2(){
+	clearInterval(MoveTimeObj_2);
+	if(MoveLock_2)return;
+	clearInterval(AutoPlayObj_2);
+	MoveLock_2=true;
+	MoveWay_2="right";
+	ISL_ScrDown_2();
+	MoveTimeObj_2=setInterval('ISL_ScrDown_2()',Speed_2);
+}
+function ISL_StopDown_2(){
+	if(MoveWay_2 == "left"){return};
+	clearInterval(MoveTimeObj_2);
+	if(GetObj('ISL_Cont_2').scrollLeft%PageWidth_2-(fill_2>=0?fill_2:fill_2+1)!=0){
+		Comp_2=PageWidth_2-GetObj('ISL_Cont_2').scrollLeft%PageWidth_2+fill_2;CompScr_2()
+	}else{MoveLock_2=false}
+	AutoPlay_2();
+}
+function ISL_ScrDown_2(){
+	if(GetObj('ISL_Cont_2').scrollLeft>=GetObj('List2_2').scrollWidth){
+		GetObj('ISL_Cont_2').scrollLeft=GetObj('ISL_Cont_2').scrollLeft-GetObj('List1_2').scrollWidth;
+	}
+	GetObj('ISL_Cont_2').scrollLeft+=Space_2;
+}
+function CompScr_2(){
+	if(Comp_2==0){MoveLock_2=false;return}
+	var num,TempSpeed=Speed_2,TempSpace=Space_2;
+	if(Math.abs(Comp_2)<PageWidth_2/2){
+		TempSpace=Math.round(Math.abs(Comp_2/Space_2));
+		if(TempSpace<1){TempSpace=1}
+	}
+	if(Comp_2<0){
+		if(Comp_2<-TempSpace){
+			Comp_2+=TempSpace;num=TempSpace
+		}else{
+			num=-Comp_2;
+			Comp_2=0
+		}
+		GetObj('ISL_Cont_2').scrollLeft-=num;setTimeout('CompScr_2()',TempSpeed)
+	}else{
+		if(Comp_2>TempSpace){
+			Comp_2-=TempSpace;num=TempSpace}
+		else{
+			num=Comp_2;
+			Comp_2=0;
+		}
+		GetObj('ISL_Cont_2').scrollLeft+=num;
+		setTimeout('CompScr_2()',TempSpeed)
+	}
+}
+function picrun_ini_2(){
+	GetObj("List2_2").innerHTML=GetObj("List1_2").innerHTML;
+	GetObj('ISL_Cont_2').scrollLeft=fill_2>=0?fill_2:GetObj('List1_2').scrollWidth-Math.abs(fill_2);
+	GetObj("ISL_Cont_2").onmouseover=function(){clearInterval(AutoPlayObj_2)}
+	AutoPlay_2();
+}
+</script>
+</head>
+<body>
+<!--顶部-->
+<script language="JavaScript">
+<!--
+function CalConv()
+ {//
+	FIRSTYEAR = 1998;
+	LASTYEAR = 2031;
+	today = new Date();
+	SolarYear = today.getFullYear();
+	SolarMonth = today.getMonth() + 1;
+	SolarDate = today.getDate();
+	Weekday = today.getDay();
+	LunarCal = [
+  new tagLunarCal( 27,  5, 3, 43, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1 ),
+  new tagLunarCal( 46,  0, 4, 48, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1 ), /* 88 */
+  new tagLunarCal( 35,  0, 5, 53, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1 ), /* 89 */
+  new tagLunarCal( 23,  4, 0, 59, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1 ),
+  new tagLunarCal( 42,  0, 1,  4, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1 ),
+  new tagLunarCal( 31,  0, 2,  9, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0 ),
+  new tagLunarCal( 21,  2, 3, 14, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1 ), /* 93 */
+  new tagLunarCal( 39,  0, 5, 20, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1 ),
+  new tagLunarCal( 28,  7, 6, 25, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1 ),
+  new tagLunarCal( 48,  0, 0, 30, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1 ),
+  new tagLunarCal( 37,  0, 1, 35, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1 ), /* 97 */
+  new tagLunarCal( 25,  5, 3, 41, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1 ),
+  new tagLunarCal( 44,  0, 4, 46, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1 ),
+  new tagLunarCal( 33,  0, 5, 51, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1 ),
+  new tagLunarCal( 22,  4, 6, 56, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0 ), /* 101 */
+  new tagLunarCal( 40,  0, 1,  2, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0 ),
+  new tagLunarCal( 30,  9, 2,  7, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1 ),
+  new tagLunarCal( 49,  0, 3, 12, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1 ),
+  new tagLunarCal( 38,  0, 4, 17, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0 ), /* 105 */
+  new tagLunarCal( 27,  6, 6, 23, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1 ),
+  new tagLunarCal( 46,  0, 0, 28, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0 ),
+  new tagLunarCal( 35,  0, 1, 33, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0 ),
+  new tagLunarCal( 24,  4, 2, 38, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1 ), /* 109 */
+  new tagLunarCal( 42,  0, 4, 44, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1 ),
+  new tagLunarCal( 31,  0, 5, 49, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0 ),
+  new tagLunarCal( 21,  2, 6, 54, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1 ),
+  new tagLunarCal( 40,  0, 0, 59, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1 ), /* 113 */
+  new tagLunarCal( 28,  6, 2,  5, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0 ),
+  new tagLunarCal( 47,  0, 3, 10, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1 ),
+  new tagLunarCal( 36,  0, 4, 15, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1 ),
+  new tagLunarCal( 25,  5, 5, 20, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0 ), /* 117 */
+  new tagLunarCal( 43,  0, 0, 26, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1 ),
+  new tagLunarCal( 32,  0, 1, 31, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0 ),
+  new tagLunarCal( 22,  3, 2, 36, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0 ) ];
+ /* 民國年每月之日數 */
+ SolarCal = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ];
+ /* 民國年每月之累積日數, 平年與閏年 */
+SolarDays = [  0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365, 396,  0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335, 366, 397 ];
+	AnimalIdx = ["马", "羊", "猴", "鸡", "狗", "猪", "鼠", "牛", "虎", "兔", "龙", "蛇" ];
+	LocationIdx = [ "南", "东", "北", "西" ];
+	if ( SolarYear <= FIRSTYEAR || SolarYear > LASTYEAR ) return 1;
+	sm = SolarMonth - 1;
+		if ( sm < 0 || sm > 11 ) return 2;
+		leap = GetLeap( SolarYear );
+	if ( sm == 1 )
+		d = leap + 28;
+	else
+		d = SolarCal[sm];
+	if ( SolarDate < 1 || SolarDate > d ) return 3;
+	y = SolarYear - FIRSTYEAR;
+	acc = SolarDays[ leap*14 + sm ] + SolarDate;
+	kc = acc + LunarCal[y].BaseKanChih;
+	Kan = kc % 10;
+	Chih = kc % 12;
+	Location = LocationIdx[kc % 4];
+	Age = kc % 60;
+	if ( Age < 22 )
+		Age = 22 - Age;
+	else
+		Age = 82 - Age;
+	Animal = AnimalIdx[ Chih ];
+	if ( acc <= LunarCal[y].BaseDays ) {
+		y--;
+		LunarYear = SolarYear - 1;
+		leap = GetLeap( LunarYear );
+		sm += 12;
+		acc = SolarDays[leap*14 + sm] + SolarDate;
+	 }
+	else
+		LunarYear = SolarYear;
+			l1 = LunarCal[y].BaseDays;
+	for ( i=0; i<13; i++ ) {
+		l2 = l1 + LunarCal[y].MonthDays[i] + 29;
+		if ( acc <= l2 ) break;
+		l1 = l2;
+	 }
+	LunarMonth = i + 1;
+	LunarDate = acc - l1;
+	im = LunarCal[y].Intercalation;
+	if ( im != 0 && LunarMonth > im ) {
+		LunarMonth--;
+		if ( LunarMonth == im ) LunarMonth = -im;
+	 }
+	if ( LunarMonth > 12 ) LunarMonth -= 12;
+ today=new Date();
+        function initArray(){
+                         this.length=initArray.arguments.length
+                         for(var i=0;i<this.length;i++)
+                         this[i+1]=initArray.arguments[i]  }
+       var d=new initArray("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+            // document.write("<span style='color:#000;font-size:12px'> ", today.getFullYear()," 年 ",today.getMonth()+1," 月 ",today.getDate()," 日 ",d[today.getDay()+1],"");
+           document.write("<span style='color:#000;font-size:12px'> ",today.getDate(),"/",today.getMonth()+1,"/", today.getFullYear(),"  ",d[today.getDay()+1],"");
+	  //document.write( "<span style='color:#000;font-size:12px'>【<u> 农历 " + LunarMonth + "月" + LunarDate + "日</u>】" );
+      // document.write( "煞" + Location + " 沖" + Animal + Age + "岁</span>" );
+                                  return 0;
+}
+ /* 求此民國年是否為閏年, 返回 0 為平年, 1 為閏年 */
+function GetLeap( year )
+ {
+   if ( year % 400 == 0 )
+     return 1;
+   else if ( year % 100 == 0 )
+     return 0;
+   else if ( year % 4 == 0 )
+     return 1;
+   else
+     return 0;
+ }//。
+function tagLunarCal( d, i, w, k, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13) {
+ this.BaseDays = d;         /* 到民國 1 月 1 日到農曆正月初一的累積日數 */
+ this.Intercalation = i;    /* 閏月月份. 0==此年沒有閏月 */
+ this.BaseWeekday = w;      /* 此年民國 1 月 1 日為星期幾再減 1 */
+ this.BaseKanChih = k;      /* 此年民國 1 月 1 日之干支序號減 1 */
+ this.MonthDays = [ m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13 ]; /* 此農曆年每月之大小, 0==小月(29日), 1==大月(30日) */
+}//
+//-->
+
+</script>
+<!--banner--><!--
+<div style="position:absolute;top:16px;right:300px;">
+<iframe width="225" scrolling="no" height="80" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=8&color=%23000&icon=5&num=1"></iframe>
+</div>-->
+<div style="position:absolute;left:500px;line-height:20px;"><script>CalConv();</script></div>
+<div class="Banner_En">
+    <span>
+        <a href="../index.html" target="new">政务版</a> | <a href="../fwb/index.html" target="_blank">服务版</a> |  <a href="javascript:;" target="_blank">返回旧版本</a>
+    </span> 
+</div><script>
+//delay延迟时间（毫秒）
+$(function() {
+	$("input[name=q]").autocomplete({
+		 source: "/search/v_ajax_list.jspx",
+		 minLength: 2,
+		 max:5,
+		 delay:100,
+		 autoFocus: true,
+		 select: function(e, ui) {
+			 $("input[name='q']").val(ui.item.value);
+			 $("#searchForm").submit();
+		 },
+		 success: function( data ) {
+			    response( $.map( data.items, function( item ) {
+			        return {
+			         label: '<B>' + item.id + '</B><br>' + item.label,
+			         value: item.id
+			        }
+			       }));
+		}
+	});
+});
+function qkeypress(){
+	var q=$("input[name=q]");
+	if(q.val().trim()!=""){
+		$("input[name=q]").autocomplete("enable");
+	}else{
+		$("input[name=q]").autocomplete("disable");
+	}
+}
+</script>
+<!--导航-->
+<div class="nav_en">
+
+    <div class="nav_home"><a href=""><p><strong>Home</strong></p></a></div>
+    <div class="nav_p">
+
+      <p>
+        <a href="../szzc.html" target="_self">About ICAMA</a><span>　|　</span>
+        <!--行业信息-->
+        <a href="../hyxx/index.html" target="_self">Industry Info</a><span>　|　</span>
+        <!--s-->
+        <a href="../scxx/index.html" target="_self">Market Info</a><span>　|　</span>
+        <!--政务公开-->
+        <a href="../zwgk/index.html" target="_self">Government affairs public</a><span>　|　</span>
+        <!--数据中心-->
+        <a href="../sjzx4ywb/index.html" target="_self">Data center</a><span>　|　</span>
+        <!--行业风采-->
+        <a href="../hyfc4ywb/index.html" target="_self">Industry style</a></p>
+      
+    </div>
+   <div class="Search" style="margin-left:775px;">
+      <form action="/search.jspx" target="_blank" id="searchForm">
+        <table width="203" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td id="table_nav"><label for="textfield"></label>
+              <input name="q" value="" type="text" maxlength="40" autocomplete="off" style="text-align:center;border:0px;width:96%;height:20px;margin-left:1px;margin-top:-2px;"></td>
+            <td><input type="image" src="/r/cms/www/default/img/but_2.gif" name="button" id="button" value="submit"></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+</div>
+<div class="cls"></div><!--滚动新闻-->
+<div class="Roll_news_en"><img src="../r/cms/www/default/img/horn.png" width="20" height="20">
+  <marquee direction="left" behavior="scroll" scrollamount="5" scrolldelay="0" loop="-1" width="930" height="20" hspace="10" vspace="10" onmouseover="this.stop()" onmouseout="this.start()">
+       <a href="../zwgk/2270.html" title="Announcement No. 2289 of the Ministry of Agriculture of the People's Republic of China " target="_blank">
+Announcement No. 2289 of the Ministry of Agriculture of the People's Republic ...       </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </marquee>
+</div>
+
+<div class="cls"></div><!--滚动新闻结束-->
+<!--顶部广告-->
+<div class="Ad_en" style="margin-top:0px">
+<div class="Ad_en_1"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=11"></script> </div>
+<div class="Ad_en_2"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=12"></script> </div>
+<div class="Ad_en_3"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=13"></script> </div>
+<div class="Ad_en_4"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=14"></script> </div>
+</div>
+<div class="cls"></div>
+<!--广告结束-->
+
+<!--新闻动态&风采-->
+<div class="News_en" style="margin-top:8px">
+   <!-- 右侧广告 -->
+  <div class="News_en_right">
+  <div class="News_en_right_Ad1"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=15"></script></div>
+  <div class="News_en_right_Ad2"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=16"></script></div>
+  <div class="News_en_right_Ad3"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=17"></script></div>
+  </div>
+   <!-- 右侧广告结束 -->
+  <div class="News_en_top"> 
+    <!--focus-->
+    <div class="News_en_top_left">
+      <div id="content">
+        <div id="main"> 
+          <!-----------图片切换  begin----------->
+          <div class="sub_box">
+            <div id="p-select" class="sub_nav">
+              <div class="sub_no" id="bd1lfsj">
+                <ul>
+                  <li class="show">1</li>
+                  <li class="">2</li>
+                  <li class="">3</li>
+                  <li class="">4</li>
+                </ul>
+              </div>
+            </div>
+            <div id="bd1lfimg">
+              <div>
+                <dl class="show">
+                </dl>
+                <dl class="">
+                  <dt><a href="../zwxw/7482.html" title="China-Canada Pesticide Management Technical Seminar was held in Beijing" target="_blank">
+                      <img src="../u/cms/www/201704/10095040cun4.JPG" alt="China-Canada Pesticide Management Technical Seminar was held in Beijing">
+                      </a>
+                  </dt>
+                  <dd>
+                    <h2>China-Canada Pesticide Management Tech...</h2>
+                  </dd>
+                </dl>
+                <dl class="">
+                  <dt><a href="../zwxw/6282.html" title="Sino-Turkey Workshop on Pesticide Management Held in China" target="_blank">
+                      <img src="../u/cms/www/201610/31094158tpqa.JPG" alt="Sino-Turkey Workshop on Pesticide Management Held in China">
+                      </a>
+                  </dt>
+                  <dd>
+                    <h2>Sino-Turkey Workshop on Pesticide Mana...</h2>
+                  </dd>
+                </dl>
+                <dl class="">
+                  <dt><a href="../zwxw/2470.html" title="Yu Xinrong, Vice Minister of Agriculture, stressed deepening theoretical researches and scientific advancement of the Action Plan for Zero Growth in t" target="_blank">
+                      <img src="../u/cms/www/201511/30215303mnj5.jpg" alt="Yu Xinrong, Vice Minister of Agriculture, stressed deepening theoretical researches and scientific advancement of the Action Plan for Zero Growth in t">
+                      </a>
+                  </dt>
+                  <dd>
+                    <h2>Yu Xinrong, Vice Minister of Agricultu...</h2>
+                  </dd>
+                </dl>
+                <dl class="">
+                  <dt><a href="../zwxw/636.html" title="Three agricultural industry guidelines approved by GRC" target="_blank">
+                      <img src="../u/cms/www/201509/18095920iwf4.png" alt="Three agricultural industry guidelines approved by GRC">
+                      </a>
+                  </dt>
+                  <dd>
+                    <h2>Three agricultural industry guidelines...</h2>
+                  </dd>
+                </dl>
+                
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">movec();</script> 
+        </div>
+      </div>
+    </div>
+    <div class="News_en_top_right">
+      <div class="News_en_top_right_head">
+        <h1>Government information</h1>
+           
+        <h2><a href="../zwxw/index.html">more</a></h2>
+        <ul style="clear:both;">
+          <li><span>2017-04-10</span><a href="../zwxw/7482.html" target="_blank" title="China-Canada Pesticide Management Technical Seminar was held in Beijing">China-Canada Pesticide Management Tech...</a></li>
+          <li><span>2016-10-31</span><a href="../zwxw/6282.html" target="_blank" title="Sino-Turkey Workshop on Pesticide Management Held in China">Sino-Turkey Workshop on Pesticide Mana...</a></li>
+          <li><span>2015-12-11</span><a href="../zwxw/2793.html" target="_blank" title="Fertilizer and pesticide utilization rate on China’s staple food rise steadily">Fertilizer and pesticide utilization r...</a></li>
+          <li><span>2015-11-30</span><a href="../zwxw/2470.html" target="_blank" title="Yu Xinrong, Vice Minister of Agriculture, stressed deepening theoretical researches and scientific advancement of the Action Plan for Zero Growth in t">Yu Xinrong, Vice Minister of Agricultu...</a></li>
+          <li><span>2015-09-30</span><a href="../zwxw/823.html" target="_blank" title="Results of the first batch of agrochemicals supervision and spot check in 2015">Results of the first batch of agrochem...</a></li>
+          <li><span>2015-09-30</span><a href="../zwxw/821.html" target="_blank" title="Minutes of the Seventeenth Plenary Meeting of the Eighth National Review Committee of Pesticide Registration">Minutes of the Seventeenth Plenary Mee...</a></li>
+          <li><span>2015-09-29</span><a href="../zwxw/825.html" target="_blank" title="Work conference on implementing Rotterdam Convention and Stockholm Convention held in Mudanjiang.">Work conference on implementing Rotter...</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="Info_en_top" style="bottom:0px">
+    <div class="Info_en_top_Ad1"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=421"></script></div>
+    <div class="Info_en_top_Ad2"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=422"></script></div>
+    <div class="Info_en_top_Ad3"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=423"></script></div>
+  </div>
+</div>
+
+
+<!--新闻风采结束 -->
+<!--各种动态-->
+<div class="Info_en">
+  <!-- 中部广告 -->
+  <div class="Info_en_top">
+  <div class="Info_en_top_Ad1"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=18"></script></div>
+  <div class="Info_en_top_Ad2"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=19"></script></div>
+  <div class="Info_en_top_Ad3"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=20"></script></div>
+  <!--第二排-->
+  <div class="Info_en_top_Ad1 Info_en_top_Ad4"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=287"></script></div>
+  <div class="Info_en_top_Ad2 Info_en_top_Ad4"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=288"></script></div>
+  <div class="Info_en_top_Ad3 Info_en_top_Ad4"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=289"></script></div>
+  </div>
+
+  <!-- 中部广告结束 -->
+  <div class="Info_en_mid">
+    <!-- 行业信息 -->
+    <div class="Info_en_mid_left">
+      <div class="Info_en_mid_left_head">
+        <h1>Industry information</h1>
+        <h2><a href="../hyxx/index.html" target="new">more</a></h2>
+      </div>
+      <ul style="clear:both;">
+        <li><span>2016-03-29</span><a href="../hyxx/4445.html" target="_blank" title="Rainbow promotes brand marketing in Southeast Asia market">Rainbow promotes brand marketing in So...</a></li>
+        <li><span>2016-03-29</span><a href="../hyxx/4444.html" target="_blank" title="Shandong Dacheng Pesticide relocated, investment injected as name changed to Shandong Dacheng Bio-Chemical">Shandong Dacheng Pesticide relocated, ...</a></li>
+        <li><span>2016-03-29</span><a href="../hyxx/4443.html" target="_blank" title="Fuhua Group acquires 5.16% share of Nufarm">Fuhua Group acquires 5.16% share of Nu...</a></li>
+        <li><span>2016-03-29</span><a href="../hyxx/4442.html" target="_blank" title="“1+6+X” program – Fuhua Group to launch 6 new herbicides in 5 years">“1+6+X” program – Fuhua Group to la...</a></li>
+        <li><span>2016-01-20</span><a href="../hyxx/3430.html" target="_blank" title="China approved biofungicide Bacillus methylotrophicus 9912">China approved biofungicide Bacillus m...</a></li>
+      </ul>
+    </div>
+    <!-- 市场信息 -->
+    <div class="Info_en_mid_right">
+      <div class="Info_en_mid_right_head">
+        <h1>Market information</h1>
+        <h2><a href="../scxx/index.html" target="new">more</a></h2>
+      </div>
+      <ul style="clear:both;">
+        <li><span>2016-03-29</span><a href="../scxx/4448.html" target="_blank" title="China pesticide trade situation unoptimistic in 2015">China pesticide trade situation unopti...</a></li>
+        <li><span>2016-03-29</span><a href="../scxx/4447.html" target="_blank" title="To consolidate competitive edge to enable Chinese pesticide industry to change from the “left over” status to a “win over” position ">To consolidate competitive edge to ena...</a></li>
+        <li><span>2016-03-29</span><a href="../scxx/4446.html" target="_blank" title="China registered first Bacillus methylotrophicus biofungicide">China registered first Bacillus methyl...</a></li>
+        <li><span>2016-01-25</span><a href="../scxx/3530.html" target="_blank" title="China 2015 cotton imports hit multi-year low, to drop more in 2016">China 2015 cotton imports hit multi-ye...</a></li>
+        <li><span>2015-12-18</span><a href="../scxx/2947.html" target="_blank" title="China’s 2015 grain output rises 2.4%">China’s 2015 grain output rises 2.4%</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 政务公开 -->
+  <div class="Info_en_bottom">
+    <div class="Info_en_bottom_head">
+      <h1>Government affairs public</h1>
+      <h2><a href="../zwgk/index.html" target="new">more</a></h2>
+    </div>
+    <ul style="clear:both;">
+        <li><span>2015-08-22</span><a href="../zwgk/2270.html" target="_blank" title="Announcement No. 2289 of the Ministry of Agriculture of the People's Republic of China ">Announcement No. 2289 of the Ministry of Agriculture of the People's Republic of China </a></li>
+        <li><span>2013-12-09</span><a href="../zwgk/2290.html" target="_blank" title=" Announcement No. 2032 of the Ministry of Agriculture "> Announcement No. 2032 of the Ministry of Agriculture </a></li>
+        <li><span>2012-08-25</span><a href="../zwgk/828.html" target="_blank" title="Announcement No.1825 of the Ministry of Agriculture">Announcement No.1825 of the Ministry of Agriculture</a></li>
+        <li><span>2012-08-09</span><a href="../zwgk/827.html" target="_blank" title="Notification of MOA General Office on 1st Pesticide Supervision & Random Inspection 2012">Notification of MOA General Office on 1st Pesticide Supervision & Random Inspection 2012</a></li>
+        <li><span>2012-04-24</span><a href="../zwgk/2450.html" target="_blank" title="Announcement No. 1745 of the Ministry of Agriculture, the Ministry of Industry and Information Technology and the General Administration of Quality Su">Announcement No. 1745 of the Ministry of Agriculture, the Ministry of Industry and Information Tec...</a></li>
+        <li><span>2012-04-24</span><a href="../zwgk/2451.html" target="_blank" title="Announcement No. 1745 of the Ministry of Agriculture, the Ministry of Industry and Information Technology and the General Administration of Quality Su">Announcement No. 1745 of the Ministry of Agriculture, the Ministry of Industry and Information Tec...</a></li>
+    </ul>
+  </div>
+</div>
+<!-- 各种动态结束 -->
+<!--药检系统-->
+<div class="Drug_en">
+  <div class="Drug_en_top">
+    <div class="Drug_en_top_head">
+      <h1> About ICAMA</h1>
+    </div>
+    <div class="Drug_en_top_body"><!--206 134-->
+      <table width="206" height="171" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="27">&nbsp;</td>
+          <td width="64"><img src="../r/cms/www/default/img/icon11.gif" width="40" height="40"></td>
+          <td width="10">&nbsp;</td>
+          <td width="81"><img src="../r/cms/www/default/img/icon12.gif" width="40" height="40"></td>
+          <td width="24">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <!-- 致词 -->
+          <td><a href="../szzc.html" target="_blank">Speech</a></td>
+          <td>&nbsp;</td>
+          <!-- 组织机构 -->
+          <td><a href="../zzjg.html" target="_blank">Framework</a></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><img src="../r/cms/www/default/img/icon13.gif" width="40" height="40"></td>
+          <td>&nbsp;</td>
+          <td><img src="../r/cms/www/default/img/icon14.gif" width="40" height="40"></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <!-- 职能 科室介绍 -->
+          <td><a href="../csjs4ywb.html" target="_blank">Function</a></td>
+          <td>&nbsp;</td>
+          <!-- 省所介绍 -->
+          <td><a href="../ssjs4ywb.html" target="_blank">Institute introduce</a></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!--  药检系统结束 -->
+  <!--  数据中心 -->
+  <div class="Drug_en_mid">
+    <div class="Drug_en_mid_head">
+      <h1>Data center</h1>
+    </div>
+    <div class="Drug_en_mid_body">
+      <table width="206" height="134" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="22">&nbsp;</td>
+          <td width="83"><img src="../r/cms/www/default/img/icon15.gif" width="40" height="40"></td>
+          <td width="10">&nbsp;</td>
+          <td width="66"><img src="../r/cms/www/default/img/icon16.gif" width="40" height="40"></td>
+          <td width="25">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <!-- 登记-->
+          <td><a href="../sjzx4ywb/index.html" target="_blank">Registration</a></td>
+          
+          <td>&nbsp;</td>
+          <!--企业查询-->
+          <td><a href="../sjzx4ywb/index.html" target="_blank">Unit information</a></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><img src="../r/cms/www/default/img/icon17.gif" width="40" height="40"></td>
+          <td>&nbsp;</td>
+          <td><img src="../r/cms/www/default/img/icon18.gif" width="40" height="40"></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <!--残留限量信息-->
+          <td><a href="../sjzx4ywb/index.html" target="_blank">Residual Limit information</a></td>
+          <td>&nbsp;</td>
+          <!--更多-->
+          <td><a href="../sjzx4ywb/index.html" target="_blank">more</a></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!-- 数据中心结束 -->
+<!-- 互动 -->
+  <div class="Drug_en_bottom"><!--<a href="/mybbs" target="_blank">--><img src="../r/cms/www/default/img/talk2.gif" width="208" height="65"><!--</a>--></div>
+</div>
+<!--底部广告-->
+<div class="cls" style="height:20px;"></div>
+<div class="footad">
+  <div> <script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=290"></script></div>
+  <div class="ad"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=291"></script></div>
+  <div class="ad"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=292"></script></div>
+  <div class="ad"><script type="text/javascript" src="http://www.chinapesticide.org.cn/adspace.jspx?id=293"></script></div>
+
+</div><!--CopyRight-->
+<div class="cls"></div>
+<div style="position:absolute;margin-top:35px;margin-left:140px;"><p><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/33/000/0000/60899022/CA330000000608990220002.js' type='text/javascript'%3E%3C/script%3E"));</script></p></div>
+
+<div class="CopyRight_en_1"></div>
+<div class="CopyRight_en_2">
+  <p>Copyright by Institute for the Control of Agrochemicals,Ministry of Agriculture ,P.R.China</p>
+</div>        
+</body>
+</html>

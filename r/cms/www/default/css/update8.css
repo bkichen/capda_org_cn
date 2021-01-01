@@ -1,0 +1,75 @@
+
+/* CSS Document */
+html, body, ul, li, h1, h2, h3, h4, h5, h6, fieldset, legend {
+	padding:0;
+	margin:0;
+}
+ul, li {
+	list-style-type:none;
+	text-transform:capitalize;
+}
+.clear {
+	clear:both;
+*display:inline;/*IE only*/
+}
+/*menu*/
+#navjia {
+	margin:0 auto 60px;
+	display:block;
+	BACKGROUND: url(../images/nav_bj_1.png) repeat-x;
+	WIDTH:100%;
+	z-index:99;
+	font-size:18px;
+	font-weight:bold;
+	FONT-FAMILY:"微软雅黑";
+}
+.mainlevel a{
+		font-size:18px;
+	font-weight:bold;
+	FONT-FAMILY:"微软雅黑";
+}
+#navjia .jquery_out {
+	float:left;
+	line-height:32px;
+	display:block;
+	border-right:1px solid #fff;
+	text-align:center;
+	color:#F90;
+	background:#062723 url(http://www.chinapesticide.org.cn/r/cms/www/default/images/slide-panel_03.png) 0 0 repeat-x;
+}
+#navjia .jquery_inner {
+	margin-left:16px;
+}
+#navjia .mainlevel {
+	background:none;
+	float:left;
+	width:110px;
+	position: relative;/*IE6 only*/
+}
+
+#sub_02 a,#sub_03 a,#sub_04 a,#sub_05 a,#sub_06 a,#sub_07 a{
+	color:#fff;
+	text-decoration:none;
+	line-height:30px;
+	height:30px;
+	display:block;
+	width:125px;
+}
+#sub_02 a:hover,#sub_03 a:hover,#sub_04 a:hover,#sub_05 a:hover,#sub_06 a:hover,#sub_07 a:hover{
+	color:#F00;
+	text-decoration:none;
+}
+#navjia .mainlevel ul {
+	display:none;
+	position:absolute;
+	top:57px;
+}
+#navjia .mainlevel li {
+	background:#ffe60c;
+	width:125px; /*IE6 only*/
+}
+#navjia .mainlevel ul li a:hover {
+	text-decoration:none;
+	background:none;
+	background-color:#b3ceff !important;
+}

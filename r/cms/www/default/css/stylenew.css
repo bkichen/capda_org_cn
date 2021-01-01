@@ -1,0 +1,1959 @@
+.gfR_newsList_z {
+	CLEAR: both;
+	MARGIN: 0px auto;
+	OVERFLOW: hidden;
+	WIDTH: 187px
+}
+.gfR_newsList_z LI {
+	OVERFLOW: hidden;
+	LINE-HEIGHT: 25px;
+	HEIGHT: 25px;
+	TEXT-ALIGN: left
+}
+.gfR_newsList_z A {
+	COLOR: #104770
+}
+.rTBg01_z, .rTBg02_z {
+	background-color: #0364cd
+}
+.jwzb_z {
+	OVERFLOW: hidden;
+	WIDTH: 214px
+}
+.jwzb_z DL {
+	MARGIN: 0px auto;
+	OVERFLOW: hidden;
+	WIDTH: 196px;
+	PADDING-TOP: 14px;
+}
+.jwzb_z DL DT {
+	DISPLAY: inline;
+	WIDTH: 187px;
+	MARGIN-RIGHT: 10px;
+	text-align: center;
+}
+.jwzb_z DL DT IMG {
+	WIDTH: 89px;
+	HEIGHT: 102px
+}
+.jwzb_z DL DT P {
+	OVERFLOW: hidden;
+	WIDTH: 89px;
+	LINE-HEIGHT: 22px;
+	HEIGHT: 22px;
+	TEXT-ALIGN: center
+}
+.jwzb_z DL DT A:hover P {
+	TEXT-DECORATION: underline
+}
+.jwzb_z DL DD {
+	MARGIN-TOP: 1px;
+	DISPLAY: inline;
+	FLOAT: left;
+	WIDTH: 95px;
+	LINE-HEIGHT: 20px
+}
+.jwzb_z DL DD A {
+	DISPLAY: inline;
+	FLOAT: left;
+	OVERFLOW: hidden;
+	WIDTH: 43px;
+	MARGIN-RIGHT: 4px;
+	HEIGHT: 20px
+}
+.gfzw_z {
+	OVERFLOW: hidden;
+	WIDTH: 214px
+}
+.gfzw_z UL {
+	BACKGROUND: #fff;
+	PADDING-BOTTOM: 1px;
+	MARGIN: 0px auto;
+	WIDTH: 193px;
+	PADDING-TOP: 2px
+}
+.gfzw_z UL LI {
+	MARGIN-TOP: 1px;
+	BACKGROUND: url(http://www.chinapesticide.org.cn/r/cms/www/default/images/liBg.gif) #fff no-repeat 1px top;
+	OVERFLOW: hidden;
+	WIDTH: 192px;
+	LINE-HEIGHT: 27px;
+	HEIGHT: 27px
+}
+.gfzw_z UL LI A {
+	MARGIN-LEFT: 13px
+}
+.rdht_z {
+	OVERFLOW: hidden;
+	WIDTH: 750px；
+}
+.rdht_zt_z {
+	DISPLAY: block;
+	MARGIN: 10px auto 0px;
+	WIDTH: 193px;
+	HEIGHT: 51px
+}
+.rdht_z UL {
+	PADDING-TOP: 5px;
+	font-size: 14px;
+}
+.tbgz_z {
+	MARGIN: 10px auto 0px;
+	WIDTH: 189px
+}
+.tbgz_z H3 {
+	FONT-SIZE: 12px;
+	HEIGHT: 25px
+}
+.tbgz_z H3 SPAN {
+	DISPLAY: block;
+	FLOAT: left;
+	WIDTH: 55px;
+	COLOR: #cd0001;
+	LINE-HEIGHT: 25px;
+	HEIGHT: 25px
+}
+.mt10_z H3 A {
+	DISPLAY: block;
+	FLOAT: left;
+	WIDTH: 55px;
+	COLOR: #cd0001;
+	LINE-HEIGHT: 25px;
+	HEIGHT: 25px
+}
+.tbgz_z H3 P {
+	DISPLAY: inline;
+	BACKGROUND: url(http://www.chinapesticide.org.cn/r/cms/www/default/images/pointLine.gif) repeat-x left 15px;
+	FLOAT: left;
+	WIDTH: 129px;
+	HEIGHT: 25px
+}
+.rPicList_z {
+	MARGIN-LEFT: 8px;
+	OVERFLOW: hidden;
+	WIDTH: 185px
+}
+.rPicList_z LI {
+	DISPLAY: inline;
+	FLOAT: left;
+	OVERFLOW: hidden;
+	WIDTH: 86px
+}
+.rPicList_z LI IMG {
+	OVERFLOW: hidden;
+	WIDTH: 78px;
+	HEIGHT: 96px
+}
+.RPicL_img_z {
+	OVERFLOW: hidden;
+	WIDTH: 80px;
+	HEIGHT: 61px
+}
+.RPicL_img_z {
+	BORDER-RIGHT: #9da0a7 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #9da0a7 1px solid;
+	DISPLAY: block;
+	PADDING-LEFT: 2px;
+	BACKGROUND: #fff;
+	PADDING-BOTTOM: 2px;
+	BORDER-LEFT: #9da0a7 1px solid;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #9da0a7 1px solid
+}
+.RPicL_img_z:hover {
+	BORDER-RIGHT: #7f828a 1px solid;
+	BORDER-TOP: #7f828a 1px solid;
+	BORDER-LEFT: #7f828a 1px solid;
+	BORDER-BOTTOM: #7f828a 1px solid
+}
+.RPicL_picText_z {
+	DISPLAY: block;
+	OVERFLOW: hidden;
+	COLOR: #656764! important;
+	LINE-HEIGHT: 30px;
+	HEIGHT: 30px;
+	TEXT-ALIGN: center
+}
+.rFirstPic_z {
+	MARGIN-RIGHT: 13px
+}
+.kind_z {
+	DISPLAY: inline;
+	FLOAT: left;
+	COLOR: #cb0101! important;
+	MARGIN-RIGHT: 5px
+}
+.tbgzNews_z {
+	/*BACKGROUND: url(../images/marginLine.gif) no-repeat center top;*/
+	PADDING-TOP: 5px
+}
+.fwgc_z {
+	OVERFLOW: hidden;
+	WIDTH: 214px
+}
+.fwgc_z UL {
+	PADDING-TOP: 8px
+}
+.mtsd_z {
+	OVERFLOW: hidden;
+	WIDTH: 214px
+}
+.mtsd_z UL {
+	PADDING-TOP: 8px
+}
+.jsyx_z {
+	OVERFLOW: hidden;
+	WIDTH: 214px
+}
+.jsyx_z UL {
+	PADDING-TOP: 5px
+}
+.rPicList2_z {
+	MARGIN-LEFT: 9px;
+	WIDTH: 194px;
+	text-align: center;
+}
+.RPicL2_img_z {
+	MARGIN-TOP: 8px;
+	DISPLAY: inline;
+	FLOAT: left;
+	OVERFLOW: hidden;
+	WIDTH: 86px;
+	MARGIN-RIGHT: 8px
+}
+.RPicL2_img_z A {
+	BORDER-RIGHT: #9da0a7 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #9da0a7 1px solid;
+	DISPLAY: block;
+	PADDING-LEFT: 2px;
+	BACKGROUND: #fff;
+	PADDING-BOTTOM: 2px;
+	BORDER-LEFT: #9da0a7 1px solid;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #9da0a7 1px solid
+}
+.RPicL2_img_z IMG {
+	OVERFLOW: hidden;
+	WIDTH: 80px;
+	HEIGHT: 61px
+}
+.RPicL2_title_z {
+	DISPLAY: inline;
+	FONT-WEIGHT: bold;
+	OVERFLOW: hidden;
+	WIDTH: 100px;
+	LINE-HEIGHT: 30px;
+	HEIGHT: 30px;
+}
+.RPicL2_title_z img {
+	margin: 0 auto;
+}
+.red {
+	color: #F00;
+}
+.RPicL2_title_z1 {
+	DISPLAY: inline;
+	FONT-WEIGHT: bold;
+	OVERFLOW: hidden;
+	WIDTH: 100px;
+	LINE-HEIGHT: 30px;
+	HEIGHT: 30px;
+	font-size: 14px;
+}
+.RPicL2_con_z {
+	DISPLAY: inline;
+	FLOAT: left;
+	OVERFLOW: hidden;
+	WIDTH: 100px;
+	COLOR: #5b595c;
+	LINE-HEIGHT: 15px;
+	HEIGHT: 46px
+}
+.gfs_z {
+	OVERFLOW: hidden;
+	WIDTH: 214px
+}
+.gfsNews_z {
+	/*BACKGROUND: url(../images/marginLine.gif) no-repeat center top; */
+	PADDING-TOP: 5px
+}
+.gfs_z .rPicList_z {
+	MARGIN-TOP: 8px;
+	MARGIN-LEFT: 13px;
+	WIDTH: 198px
+}
+.jdyy_z {
+	OVERFLOW: hidden;
+	WIDTH: 214px
+}
+.jdyy_z UL {
+	PADDING-TOP: 5px
+}
+.gffg_z {
+	OVERFLOW: hidden;
+	WIDTH: 214px
+}
+.gffg_z UL {
+	PADDING-TOP: 5px
+}
+.faguiList_z {
+	MARGIN-TOP: 3px;
+	BACKGROUND: url(http://www.chinapesticide.org.cn/r/cms/www/default/images/newBg.gif) no-repeat left top;
+	MARGIN-LEFT: 9px;
+	OVERFLOW: hidden;
+	WIDTH: 194px;
+	COLOR: #565e71;
+	LINE-HEIGHT: 20px;
+	PADDING-TOP: 3px;
+	HEIGHT: 41px
+}
+.faguiList_z A {
+	MARGIN: 0px 4px
+}
+.faguiList_z P {
+	OVERFLOW: hidden;
+	WIDTH: 194px;
+	HEIGHT: 20px
+}
+.gfL_newsList_z {
+	CLEAR: both;
+	MARGIN: 7px auto 0px;
+	OVERFLOW: hidden;
+	WIDTH: 315px
+}
+.gfL_newsList_z LI {
+	OVERFLOW: hidden;
+	LINE-HEIGHT: 25px;
+	HEIGHT: 25px;
+	TEXT-ALIGN: left
+}
+.gfL_newsList_z A {
+	MARGIN-TOP: 0px;
+	COLOR: #2b4463
+}
+.gfL_newsList2_z {
+	CLEAR: both;
+	MARGIN: 7px auto 0px;
+	OVERFLOW: hidden;
+	WIDTH: 478px;
+	font-size: 14px;
+}
+.gfL_newsList2_z LI {
+	PADDING-LEFT: 10px;
+	BACKGROUND: url(../images/point.gif) no-repeat left 11px;
+	OVERFLOW: hidden;
+	LINE-HEIGHT: 25px;
+	HEIGHT: 25px;
+	TEXT-ALIGN: left
+}
+.gfL_newsList2_z A {
+	MARGIN-TOP: 0px;
+	COLOR: #2b4463
+}
+.LTBg01_z {
+	BACKGROUND: url(http://www.chinapesticide.org.cn/r/cms/www/default/images/gf_leftT_bg02.gif) no-repeat left top;
+	WIDTH: 478px
+}
+.LTBg02_z {
+	background: #c7daeb url(http://www.chinapesticide.org.cn/r/cms/www/default/images/5.gif) 8px center no-repeat;
+	WIDTH: 478px
+}
+.LTBg03_z {
+	background: #c7daeb url(http://www.chinapesticide.org.cn/r/cms/www/default/images/5.gif) 8px center no-repeat;
+	WIDTH: 478px
+}
+.LTBg04_z {
+	background: #c7daeb url(http://www.chinapesticide.org.cn/r/cms/www/default/images/5.gif) 8px center no-repeat;
+	WIDTH: 1000px;
+}
+.gfLeft_z {
+	OVERFLOW: hidden;
+	width: 1000px;
+	margin-bottom: 40px;
+	margin-TOP: 20px;
+	margin-LEFT: 0px;
+}
+.gfLeft_z H2 {
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 14px;
+	OVERFLOW: hidden
+}
+.gfLeft_z H2 SPAN {
+	MARGIN-LEFT: 28px;
+	COLOR: #0a4da4
+}
+.mainH2_z {
+	OVERFLOW: hidden;
+	LINE-HEIGHT: 28px;
+	HEIGHT: 28px
+}
+.mainH2_z SPAN {
+	MARGIN-LEFT: 23px;
+	COLOR: #fff
+}
+.subH2_z {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 9px;
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 12px;
+	BACKGROUND: #e8e9ed;
+	PADDING-BOTTOM: 2px;
+	OVERFLOW: hidden;
+	COLOR: #a1a0a5;
+	LINE-HEIGHT: 18px;
+	PADDING-TOP: 2px
+}
+.jstp_z {
+	OVERFLOW: hidden;
+	WIDTH: 1000px;
+	HEIGHT: 220px
+}
+.jstp_z H2 {
+	MARGIN-TOP: 16px;
+	BACKGROUND: url(http://www.chinapesticide.org.cn/r/cms/www/default/images/gf_leftT_bg01.gif) no-repeat left top;
+	OVERFLOW: hidden;
+	WIDTH: 1000px;
+	LINE-HEIGHT: 28px;
+	HEIGHT: 28px
+}
+.jstp_z H2 SPAN {
+	MARGIN-LEFT: 28px;
+	COLOR: #0A4DA4
+}
+.jstp_z UL {
+	MARGIN-LEFT: 7px;
+	OVERFLOW: hidden;
+	WIDTH: 701px
+}
+.jstp_z UL LI {
+	DISPLAY: inline;
+	FLOAT: left;
+	MARGIN-RIGHT: 16px;
+	width: 478px;
+}
+.jstp_pic_z {
+	BORDER-RIGHT: #9f9f9f 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #9f9f9f 1px solid;
+	DISPLAY: block;
+	PADDING-LEFT: 2px;
+	PADDING-BOTTOM: 2px;
+	BORDER-LEFT: #9f9f9f 1px solid;
+	WIDTH: 156px;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #9f9f9f 1px solid;
+	HEIGHT: 104px
+}
+.jstp_pic_z:hover {
+	BORDER-RIGHT: #838383 1px solid;
+	BORDER-TOP: #838383 1px solid;
+	BORDER-LEFT: #838383 1px solid;
+	BORDER-BOTTOM: #838383 1px solid
+}
+.jstp_pic_z IMG {
+	WIDTH: 156px;
+	HEIGHT: 104px
+}
+.jstp_picText_z {
+	DISPLAY: block;
+	OVERFLOW: hidden;
+	WIDTH: 162px;
+	LINE-HEIGHT: 30px;
+	HEIGHT: 30px;
+	TEXT-ALIGN: center
+}
+.jstp_z UL .noMr_z {
+	MARGIN-RIGHT: 0px! important
+}
+.gfLeft_L_z {
+	OVERFLOW: hidden;
+}
+.video_z {
+	MARGIN-TOP: 10px;
+	OVERFLOW: hidden;
+	WIDTH: 478px;
+	HEIGHT: 328px
+}
+.quanwei_z {
+	MARGIN-TOP: 22px;
+	OVERFLOW: hidden;
+	HEIGHT: 326px
+}
+.wqzb_z {
+	OVERFLOW: hidden;
+	WIDTH: 478px;
+	font-size: 14px;
+}
+.jiefang_z {
+	MARGIN-TOP: 2px;
+	OVERFLOW: hidden;
+}
+.ywbd_z {
+	OVERFLOW: hidden;
+	WIDTH: 478px;
+	HEIGHT: 346px
+}
+.jsls_ {
+	OVERFLOW: hidden;
+	WIDTH: 478px
+}
+.gfjy_z {
+	CLEAR: both;
+	OVERFLOW: hidden;
+	WIDTH: 478px
+}
+.gfdy_z {
+	OVERFLOW: hidden;
+	WIDTH: 478px
+}
+.mt13_z {
+	MARGIN-TOP: 13px
+}
+.gfjz_z {
+	OVERFLOW: hidden;
+	WIDTH: 478px
+}
+.gfjz_z .subH2_z A {
+	MARGIN: 0px 10px
+}
+.gfLeft_R_z {
+	OVERFLOW: hidden;
+	WIDTH: 478px
+}
+.zgbhf_z {
+	OVERFLOW: hidden;
+	WIDTH: 478px;
+}
+.mt20_z {
+	MARGIN-TOP: 24px
+}
+.glRTitle_z {
+	OVERFLOW: hidden;
+	HEIGHT: 52px
+}
+.glRTitle_z H2 {
+	FONT-SIZE: 12px;
+	BACKGROUND: #f1f1f1;
+	OVERFLOW: hidden;
+	LINE-HEIGHT: 29px;
+	HEIGHT: 29px
+}
+.glRTitle_z H2 SPAN {
+	COLOR: #000
+}
+.glRT_pic_z {
+	BORDER-RIGHT: #c4c4c4 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #c4c4c4 1px solid;
+	PADDING-LEFT: 2px;
+	BACKGROUND: #fff;
+	PADDING-BOTTOM: 2px;
+	OVERFLOW: hidden;
+	BORDER-LEFT: #c4c4c4 1px solid;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #c4c4c4 1px solid;
+	HEIGHT: 46px
+}
+.glRT_pic_z IMG {
+	HEIGHT: 46px
+}
+.glRTC_z {
+	BORDER-RIGHT: #cbcbcb 1px solid;
+	BORDER-TOP: #eaeaea 1px solid;
+	PADDING-LEFT: 15px;
+	FONT-WEIGHT: bold;
+	BACKGROUND: #f1f1f1;
+	OVERFLOW: hidden;
+	WIDTH: 303px;
+	LINE-HEIGHT: 29px;
+	HEIGHT: 29px
+}
+.glRTC_z SPAN {
+	FONT-SIZE: 14px
+}
+.glRTS_z {
+	BORDER-RIGHT: #cbcbcb 1px solid;
+	PADDING-LEFT: 8px;
+	BACKGROUND: #ececec;
+	OVERFLOW: hidden;
+	WIDTH: 310px;
+	COLOR: #a0a0a0;
+	LINE-HEIGHT: 21px;
+	BORDER-BOTTOM: #c6c7c2 1px solid;
+	HEIGHT: 21px
+}
+.glRTS_z A {
+	MARGIN: 0px 4px
+}
+.bigAd_z {
+	OVERFLOW: hidden;
+	WIDTH: 478px;
+}
+.bigAdPic_z IMG {
+	WIDTH: 478px;
+	HEIGHT: 200px
+}
+.bigAdPic_z SPAN {
+	PADDING-RIGHT: 15px;
+	DISPLAY: block;
+	PADDING-LEFT: 15px;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 14px;
+	BACKGROUND: #176e89;
+	PADDING-BOTTOM: 0px;
+	OVERFLOW: hidden;
+	WIDTH: 289px;
+	COLOR: #fff;
+	LINE-HEIGHT: 26px;
+	PADDING-TOP: 0px;
+	HEIGHT: 26px
+}
+.bigAdBT_z {
+	BORDER-RIGHT: #dedede 1px solid;
+	PADDING-RIGHT: 5px;
+	BORDER-TOP: #dedede 1px;
+	PADDING-LEFT: 5px;
+	BACKGROUND: #f2f2f4;
+	PADDING-BOTTOM: 0px;
+	BORDER-LEFT: #dedede 1px solid;
+	WIDTH: 307px;
+	PADDING-TOP: 0px;
+	BORDER-BOTTOM: #dedede 1px solid;
+	HEIGHT: 51px
+}
+.twoNews_z P {
+	PADDING-RIGHT: 5px;
+	DISPLAY: block;
+	PADDING-LEFT: 5px;
+	PADDING-BOTTOM: 0px;
+	OVERFLOW: hidden;
+	WIDTH: 309px;
+	PADDING-TOP: 0px;
+	HEIGHT: 22px
+}
+.twoNews_z A {
+	PADDING-LEFT: 7px;
+	BACKGROUND: url(../images/point.gif) no-repeat left center;
+	OVERFLOW: hidden;
+	MARGIN-RIGHT: 15px;
+	HEIGHT: 22px
+}
+.dayNews_z {
+	CLEAR: both;
+	OVERFLOW: hidden
+}
+.dayNews_z SPAN {
+	DISPLAY: inline;
+	FLOAT: left;
+	COLOR: #cd0000
+}
+.dayNews_z A {
+	DISPLAY: inline;
+	FLOAT: left;
+	OVERFLOW: hidden;
+	WIDTH: 230px;
+	HEIGHT: 22px
+}
+.dayNews_zjj {
+	CLEAR: both;
+	OVERFLOW: hidden
+}
+.dayNews_zjj SPAN A {
+	DISPLAY: inline;
+	FLOAT: left;
+	COLOR: #cd0000
+}
+.dayNews_zjj A {
+	DISPLAY: inline;
+	FLOAT: left;
+	OVERFLOW: hidden;
+	HEIGHT: 22px
+}
+.bigNews_z {
+	OVERFLOW: hidden;
+	font-size: 14px;
+	float: left;
+	width: 478px;
+}
+.bigNews_z DL {
+	OVERFLOW: hidden
+}
+.bigNews_z DL DT {
+	FONT-SIZE: 14px;
+	BACKGROUND: url(../images/img10.gif) no-repeat left center
+}
+.bigNews_z DL DT A {
+	PADDING-LEFT: 10px;
+	COLOR: #013463
+}
+.bigNews_z DL DD A {
+	COLOR: #333
+}
+.topnews {
+	FLOAT: left;
+	MARGIN-BOTTOM: 18px;
+	MARGIN-LFTE: 12px;
+	WIDTH:920px;
+	HEIGHT: 35px;
+}
+.topnews H1 {
+	MARGIN-TOP: 12px;
+	HEIGHT: 38px
+}
+.topnews H1 A {
+	DISPLAY: block;
+	WIDTH: 100%;
+	HEIGHT: 38px
+}
+.topnews H1 IMG {
+	MARGIN: 0px auto;
+	WIDTH: 1000px;
+	HEIGHT: 38px
+}
+.topnews SPAN {
+	DISPLAY: block;
+	TEXT-ALIGN: center
+}
+.topnews SPAN A {
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 5px;
+	PADDING-BOTTOM: 0px;
+	LINE-HEIGHT: 30px;
+	PADDING-TOP: 0px;
+	HEIGHT: 30px
+}
+.video_body_z {
+	FLOAT: left;
+	WIDTH: 478px
+}
+.vb_oz {
+	PADDING-TOP: 10px;
+	BORDER-BOTTOM: #232325 1px dotted;
+	HEIGHT: 120px
+}
+.vb_oz H2 {
+	MARGIN-TOP: 5px;
+	FLOAT: left;
+	WIDTH: 119px;
+	HEIGHT: 113px
+}
+.vb_oz H2 .a_img_z A {
+	DISPLAY: block;
+	WIDTH: 115px;
+	HEIGHT: 70px
+}
+.vb_oz H2 .a_img_z IMG {
+	DISPLAY: block;
+	WIDTH: 115px;
+	HEIGHT: 70px
+}
+.vb_oz H2 P {
+	MARGIN: 2px auto 0px;
+	OVERFLOW: hidden;
+	WIDTH: 115px;
+	LINE-HEIGHT: 24px;
+	WHITE-SPACE: nowrap;
+	HEIGHT: 24px;
+	TEXT-ALIGN: center
+}
+.vb_oz H2 P A {
+	FONT: 12px/24px Arial;
+	COLOR: #595959
+}
+.vb_oz H2 .a_img_z {
+	PADDING-RIGHT: 2px;
+	DISPLAY: block;
+	PADDING-LEFT: 2px;
+	BACKGROUND: url(http://www.chinapesticide.org.cn/r/cms/www/default/images/vedio_bg.gif) no-repeat left top;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	WIDTH: 115px;
+	PADDING-TOP: 2px;
+	HEIGHT: 86px
+}
+.vb_oz UL {
+	PADDING-LEFT: 6px;
+	FLOAT: right;
+	WIDTH: 188px
+}
+.vb_oz UL LI {
+	PADDING-LEFT: 20px;
+	BACKGROUND: url(http://www.chinapesticide.org.cn/r/cms/www/default/images/video_ico.gif) no-repeat left center;
+	LINE-HEIGHT: 24px;
+	HEIGHT: 24px
+}
+.vb2_oz H2 {
+	MARGIN-TOP: 5px;
+	BACKGROUND: none transparent scroll repeat 0% 0%;
+	FLOAT: left;
+	WIDTH: 119px;
+	HEIGHT: 113px
+}
+.vb2_oz H2 SPAN A {
+	DISPLAY: block;
+	WIDTH: 115px;
+	HEIGHT: 82px
+}
+.vb2_oz H2 SPAN IMG {
+	DISPLAY: block;
+	WIDTH: 115px;
+	HEIGHT: 82px
+}
+.vb2_oz H2 SPAN A {
+	BORDER-RIGHT: #c1c1bf 1px solid;
+	PADDING-RIGHT: 1px;
+	BORDER-TOP: #c1c1bf 1px solid;
+	PADDING-LEFT: 1px;
+	PADDING-BOTTOM: 1px;
+	BORDER-LEFT: #c1c1bf 1px solid;
+	PADDING-TOP: 1px;
+	BORDER-BOTTOM: #c1c1bf 1px solid
+}
+.vb2_oz H2 P {
+	MARGIN: 0px;
+	OVERFLOW: hidden;
+	WIDTH: 115px;
+	LINE-HEIGHT: 24px;
+	WHITE-SPACE: nowrap;
+	HEIGHT: 24px;
+	TEXT-ALIGN: center
+}
+.vb2_oz H2 P A {
+	FONT: 12px/24px Arial;
+	COLOR: #595959
+}
+.vb2_oz H2 SPAN {
+	DISPLAY: block;
+	MARGIN: 0px;
+	WIDTH: 119px;
+	HEIGHT: 90px
+}
+.vb_sz {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 10px;
+	FLOAT: left;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 8px
+}
+.vb_sz LI {
+	OVERFLOW: hidden;
+	LINE-HEIGHT: 24px;
+	WHITE-SPACE: nowrap;
+	HEIGHT: 24px
+}
+.vb_sz LI SPAN {
+	COLOR: #cd0102
+}
+.wqzb_z H2 {
+	BACKGROUND: url(http://www.chinapesticide.org.cn/r/cms/www/default/images/bulue_bg.gif) no-repeat;
+	WIDTH: 478px;
+	HEIGHT: 28px
+}
+.jsls_z H2 {
+	BACKGROUND: url(http://www.chinapesticide.org.cn/r/cms/www/default/images/bulue_bg.gif) no-repeat;
+	WIDTH: 478px;
+	HEIGHT: 28px
+}
+.gfdy_z H2 {
+	BACKGROUND: url(http://www.chinapesticide.org.cn/r/cms/www/default/images/bulue_bg.gif) no-repeat;
+	WIDTH: 478px;
+	HEIGHT: 28px
+}
+.wqzb_z H3 {
+	PADDING-RIGHT: 8px;
+	PADDING-LEFT: 8px;
+	BACKGROUND: #e7eaef;
+	PADDING-BOTTOM: 0px;
+	FONT: 14px;
+	COLOR: #a19fa2;
+	PADDING-TOP: 0px;
+	HEIGHT: 44px
+}
+.jsls_z H3 {
+	PADDING-RIGHT: 8px;
+	PADDING-LEFT: 8px;
+	BACKGROUND: #e7eaef;
+	PADDING-BOTTOM: 0px;
+	FONT: 12px/22px Arial;
+	COLOR: #a19fa2;
+	PADDING-TOP: 0px;
+	HEIGHT: 44px
+}
+.gfjy_z H3 {
+	PADDING-RIGHT: 8px;
+	PADDING-LEFT: 8px;
+	BACKGROUND: #e7eaef;
+	PADDING-BOTTOM: 0px;
+	FONT: 12px/22px Arial;
+	COLOR: #a19fa2;
+	PADDING-TOP: 0px;
+	HEIGHT: 44px
+}
+.gfdy_z H3 {
+	PADDING-RIGHT: 8px;
+	PADDING-LEFT: 8px;
+	BACKGROUND: #e7eaef;
+	PADDING-BOTTOM: 0px;
+	FONT: 12px/22px Arial;
+	COLOR: #a19fa2;
+	PADDING-TOP: 0px;
+	HEIGHT: 44px
+}
+.wqzb_z H3 A {
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 5px;
+	PADDING-BOTTOM: 0px;
+	FONT: 12px/22px Arial;
+	COLOR: #003567;
+	PADDING-TOP: 0px
+}
+.jsls_z H3 A {
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 5px;
+	PADDING-BOTTOM: 0px;
+	FONT: 12px/22px Arial;
+	COLOR: #003567;
+	PADDING-TOP: 0px
+}
+.gfjy_z H3 A {
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 5px;
+	PADDING-BOTTOM: 0px;
+	FONT: 12px/22px Arial;
+	COLOR: #003567;
+	PADDING-TOP: 0px
+}
+.gfdy_z H3 A {
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 5px;
+	PADDING-BOTTOM: 0px;
+	FONT: 12px/22px Arial;
+	COLOR: #003567;
+	PADDING-TOP: 0px
+}
+.wq_pic {
+	MARGIN-TOP: 10px;
+	BACKGROUND: url(http://www.chinapesticide.org.cn/r/cms/www/default/images/wqdy_h3bg.gif) no-repeat center bottom;
+	HEIGHT: 106px
+}
+.wqzb_z .wq_pic LI {
+	FLOAT: left;
+	OVERFLOW: hidden;
+	MARGIN-RIGHT: 5px
+}
+.wqzb_z .wq_pic IMG {
+	BORDER-RIGHT: #c3c7ca 1px solid;
+	PADDING-RIGHT: 1px;
+	BORDER-TOP: #c3c7ca 1px solid;
+	PADDING-LEFT: 1px;
+	PADDING-BOTTOM: 1px;
+	BORDER-LEFT: #c3c7ca 1px solid;
+	WIDTH: 97px;
+	PADDING-TOP: 1px;
+	BORDER-BOTTOM: #c3c7ca 1px solid;
+	HEIGHT: 64px
+}
+.wqzb_z .wq_pic P {
+	FLOAT: left;
+	OVERFLOW: hidden;
+	WIDTH: 97px;
+	LINE-HEIGHT: 34px;
+	WHITE-SPACE: nowrap;
+	HEIGHT: 34px;
+	TEXT-ALIGN: center
+}
+.wqzb_z .wq_txt {
+	MARGIN-TOP: 6px;
+	WIDTH: 478px
+}
+.wqzb_z .wq_txt LI {
+	FLOAT: left;
+	OVERFLOW: hidden;
+	WIDTH: 478px;
+	WHITE-SPACE: nowrap;
+	HEIGHT: 22px
+}
+.ywbd_z .vb_oz UL {
+	PADDING-LEFT: 2px;
+	OVERFLOW: hidden;
+	WIDTH: 185px
+}
+.jsls_z .vb_oz UL {
+	PADDING-LEFT: 2px;
+	OVERFLOW: hidden;
+	WIDTH: 185px
+}
+.ywbd_z .vb_oz UL LI {
+	PADDING-LEFT: 0px;
+	BACKGROUND: none transparent scroll repeat 0% 0%;
+	OVERFLOW: hidden
+}
+.jsls_z .vb_oz UL LI {
+	PADDING-LEFT: 0px;
+	BACKGROUND: none transparent scroll repeat 0% 0%;
+	OVERFLOW: hidden
+}
+.jsls_z .vb_oz H2 {
+	WIDTH: 119px;
+	HEIGHT: 113px
+}
+.ywbd_z .vb_oz H2 {
+	WIDTH: 119px;
+	HEIGHT: 113px
+}
+.gfjy_z UL {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 8px
+}
+.gfdy_z UL {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 8px
+}
+.gfjy_z UL LI {
+	OVERFLOW: hidden;
+	WIDTH: 478px;
+	LINE-HEIGHT: 25px;
+	WHITE-SPACE: nowrap;
+	HEIGHT: 25px
+}
+.gfdy_z UL LI {
+	OVERFLOW: hidden;
+	WIDTH: 478px;
+	LINE-HEIGHT: 25px;
+	WHITE-SPACE: nowrap;
+	HEIGHT: 25px
+}
+.gfdy_z H3 {
+	LINE-HEIGHT: 22px;
+	HEIGHT: 22px
+}
+.yubei_z {
+	MARGIN-TOP: 2px;
+	OVERFLOW: hidden;
+	HEIGHT: 330px
+}
+.yubei_z .gfL_newsList2_z {
+	MARGIN-TOP: 5px;
+	PADDING-BOTTOM: 10px
+}
+.yubei_z .gfL_newsList2_z LI {
+	BACKGROUND: url(../images/point.gif) no-repeat left 11px;
+	OVERFLOW: hidden;
+	LINE-HEIGHT: 28px;
+	HEIGHT: 28px
+}
+.wuzhuang_z {
+	MARGIN-TOP: 20px;
+	OVERFLOW: hidden;
+	HEIGHT: 337px
+}
+.wuzhuang_z .gfL_newsList2_z {
+	MARGIN-TOP: 10px;
+	HEIGHT: 410px
+}
+.wuzhuang_z .gfL_newsList2_z LI {
+	BACKGROUND: url(../images/point.gif) no-repeat left 11px;
+	OVERFLOW: hidden;
+	LINE-HEIGHT: 27px;
+	HEIGHT: 27px
+}
+.bianfang_z .gfL_newsList2_z {
+	MARGIN-TOP: 3px
+}
+.bianfang_z {
+	MARGIN-TOP: 3px
+}
+.bianfang_z .gfL_newsList2_z LI {
+	BACKGROUND: url(../images/point.gif) no-repeat left 11px;
+	OVERFLOW: hidden;
+	LINE-HEIGHT: 27px;
+	HEIGHT: 27px
+}
+.minbing_z {
+	MARGIN-TOP: 4px;
+	OVERFLOW: hidden;
+	HEIGHT: 323px
+}
+.minbing_z .gfL_newsList2_z {
+	MARGIN-TOP: 8px
+}
+.minbing_z .gfL_newsList2_z LI {
+	BACKGROUND: url(../images/point.gif) no-repeat left 11px;
+	OVERFLOW: hidden;
+	LINE-HEIGHT: 27px;
+	HEIGHT: 27px
+}
+.junshi_z {
+	MARGIN-TOP: 9px
+}
+.junshi_z DL {
+	MARGIN-TOP: 11px
+}
+.mt8_z {
+	MARGIN-TOP: 8px
+}
+.mt5_z {
+	MARGIN-TOP: 5px
+}
+.mF_expo2010 {
+	BACKGROUND: #fff;
+	FONT: 12px/1.5 Verdana, Geneva, sans-serif;
+	OVERFLOW: hidden;
+	WIDTH: 478px;
+	POSITION: relative;
+	HEIGHT: 328px
+}
+.mF_expo2010 .loading {
+	Z-INDEX:9999;
+	/*BACKGROUND: url(../images/loading.gif) #fff no-repeat center -40px;*/
+	WIDTH: 100%;
+	COLOR: #666;
+	PADDING-TOP: 90px;
+	POSITION: absolute;
+	HEIGHT: 100%;
+	TEXT-ALIGN: center
+}
+.mF_expo2010 .pic LI {
+	POSITION: absolute
+}
+.mF_expo2010 .pic LI IMG {
+	WIDTH: 478px;
+	HEIGHT: 328px;
+	position: absolute;
+}
+.mF_expo2010 .txt LI {
+	Z-INDEX: 2;
+	LEFT: 0px;
+	OVERFLOW: hidden;
+	WIDTH: 478px;
+	LINE-HEIGHT: 26px;
+	POSITION: absolute;
+	HEIGHT: 26px
+}
+.mF_expo2010 .txt LI A {
+	DISPLAY: block;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 14px;
+	COLOR: #fff;
+	TEXT-ALIGN: center;
+	TEXT-DECORATION: none
+}
+.mF_expo2010 .pic LI A P {
+	DISPLAY: none
+}
+.mF_expo2010 .txt LI A IMG {
+	DISPLAY: none
+}
+.mF_expo2010 .txt LI A:hover {
+	COLOR: #fff! important
+}
+.mF_expo2010 .txt-bg {
+	BACKGROUND: #000000;
+	opacity: 0.5;
+	OVERFLOW: hidden;
+	WIDTH: 478px;
+	BOTTOM: 0px;
+	POSITION: absolute;
+	HEIGHT: 26px;
+}
+.mF_expo2010 .num {
+	FONT-SIZE: 10px
+}
+.mF_expo2010 .num {
+	Z-INDEX: 3;
+	RIGHT: 8px;
+	COLOR: #fff;
+	BOTTOM: 0px;
+	POSITION: absolute
+}
+.mF_expo2010 .num-bg {
+	Z-INDEX: 3;
+	RIGHT: 8px;
+	COLOR: #fff;
+	BOTTOM: 8px;
+	POSITION: absolute
+}
+.mF_expo2010 .num LI {
+	/*BORDER-RIGHT: #333 1px solid; 
+	BORDER-TOP: #333 1px solid; 
+	BORDER-LEFT: #333 1px solid; 
+	BORDER-BOTTOM: #333 1px solid; */
+	FLOAT: left;
+	OVERFLOW: hidden;
+	WIDTH: 13px;
+	CURSOR: pointer;
+	LINE-HEIGHT: 12px;
+	MARGIN-RIGHT: 3px;
+	TEXT-ALIGN: center;
+	height: 26px;
+	background: url(../images/lbtwxz.png) no-repeat;
+}
+.mF_expo2010 .num-bg LI {
+	/*BORDER-RIGHT: #333 1px solid;
+	BORDER-TOP: #333 1px solid;
+	BORDER-LEFT: #333 1px solid;
+	BORDER-BOTTOM: #333 1px solid;*/
+	FLOAT: left;
+	OVERFLOW: hidden;
+	WIDTH: 14px;
+	CURSOR: pointer;
+	LINE-HEIGHT: 12px;
+	MARGIN-RIGHT: 3px;
+	HEIGHT: 12px;
+	TEXT-ALIGN: center；
+}
+.mF_expo2010 .num-bg LI {
+	BACKGROUND: transparent;
+	FILTER: alpha(opacity=80);
+	opacity: 0.8；
+}
+.mF_expo2010 .num LI.current {
+	background: url(../images/lbtwxz.png) no-repeatt;
+	width: 13px;
+	height: 26px;
+}
+.mF_expo2010 .num LI.hover {
+	background: url(../images/lbtxz.png) no-repeat;
+	width: 13px;
+	height: 26px;
+}
+.oimg {
+}
+.oimg DIV {
+}
+.cimg {
+}
+.cimg DIV {
+	DISPLAY: none
+}
+.jdlistD_lh LI {
+	OVERFLOW: hidden;
+	LINE-HEIGHT: 25px;
+	ZOOM: 1;
+	HEIGHT: 25px
+}
+.jdlistD_lh LI SPAN {
+	DISPLAY: block;
+	BACKGROUND: url(http://www.chinapesticide.org.cn/r/cms/www/default/images/line.gif) repeat-x left bottom;
+	WIDTH: 186px;
+	LINE-HEIGHT: 25px;
+	HEIGHT: 25px
+}
+.zhanti_z {
+	PADDING-RIGHT: 2px;
+	PADDING-LEFT: 2px;
+	PADDING-BOTTOM: 0px;
+	WIDTH: 210px;
+	PADDING-TOP: 0px
+}
+.zhanti_z UL {
+	OVERFLOW: hidden
+}
+.zhanti_z LI {
+	CLEAR: both;
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	WIDTH: 100%;
+	PADDING-TOP: 0px;
+	HEIGHT: auto
+}
+.zhanti_z LI SPAN {
+	DISPLAY: block;
+	PADDING-LEFT: 2px;
+	BACKGROUND: url(http://www.chinapesticide.org.cn/r/cms/www/default/images/line.gif) repeat-x left 23px;
+	MARGIN-LEFT: 10px;
+	OVERFLOW: hidden;
+	LINE-HEIGHT: 25px;
+	HEIGHT: 25px
+}
+.zhanti_z LI IMG {
+	DISPLAY: block;
+	WIDTH: 186px;
+	HEIGHT: 55px
+}
+.zhanti_z LI .imgpic2_lh {
+	DISPLAY: block;
+	WIDTH: 186px;
+	HEIGHT: 55px
+}
+.zhanti_z LI .imgpic2_lh {
+	BORDER-RIGHT: #cecdcd 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #cecdcd 1px solid;
+	PADDING-LEFT: 2px;
+	BACKGROUND: #fff;
+	PADDING-BOTTOM: 2px;
+	MARGIN: 5px 0px 11px 9px;
+	BORDER-LEFT: #cecdcd 1px solid;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #cecdcd 1px solid
+}
+.main {
+	width: 1024px;
+	float: top;
+	padding-left: 12px;
+	background-color: #fff;
+}
+.main1 {
+	width: 1024px;
+	height: 52px;
+	float: top;
+	padding-left: 12px;
+}
+.bigNews_z li, .gfLeft_zz li {
+	background: url("../images/line_bg.png") repeat-x scroll center bottom transparent;
+	float: none;
+	height: 40px;
+	line-height: 40px;
+}
+.bigNews_z ul li span, .gfLeft_zz ul li span {
+	display: inline;
+	float: right;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 40px;
+}
+.bigNews_z ul li a:link, .top_new ul li a:visited, .gfLeft_zz ul li a:link, .gfLeft_zz ul li a:hover {
+	background: url("../images/img10.gif") no-repeat scroll left center transparent;
+	padding-left: 10px;
+}
+.bigNews_z a, .gfLeft_zz a {
+	width: 300px;
+	display: inline;
+	height: 20px;
+}
+.gfLeft_zz {
+	float: left;
+	width: 350px;
+}
+.gfLeft_zz ul {
+	width: 350px;
+}
+.bigNews_z span {
+	float: right;
+}
+.rFirstPic_z2 {
+	margin-right: 5px;
+}
+.middle_box_center01 {
+	font-size: 14px;
+}
+.left_line {
+	border-right: 1px solid #CCCCCC;
+	display: inline;
+	float: left;
+	margin-left: 8px;
+	margin-right: 3px;
+	padding-right: 16px;
+	width: 440px;
+}
+.left_line li {
+	background: url("../images/line_bg.png") repeat-x scroll center bottom transparent;
+	float: none;
+	height: 23px;
+	line-height: 23px;
+}
+.left_line ul li span {
+	color: #999999;
+	display: inline;
+	float: right;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 23px;
+}
+.left_line ul li a:link, .left_line ul li a:visited {
+	background: url("../images/img10.gif") no-repeat scroll left center transparent;
+	padding-left: 10px;
+}
+.middle_box_top {
+	margin-left: 5px;
+}
+.middle_box_top h2 {
+	font-size: 16px;
+	color: #666;
+	background: url(http://www.chinapesticide.org.cn/r/cms/www/default/images/icon03.gif) left center no-repeat;
+	padding-left: 20px;
+	line-height: 35px;
+}
+.contentwrap h1 {
+	color: #9B000B;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 10px;
+	text-align: center;
+}
+.time {
+	background-color: #E7E7E7;
+	color: #666666;
+	height: 20px;
+	line-height: 20px;
+	margin: 5px auto;
+	text-align: center;
+}
+#center h2 {
+	text-align: center;
+	background-color: #ddd;
+	margin: 0 0 10px 0;
+	line-height: 32px;
+}
+.text img {
+	float: left;
+	margin: 10px 15px 10px 0;
+}
+.dbList ul {
+	background: url("../images/line_di.png") repeat-x scroll center bottom transparent;
+	height: 24px;
+}
+.dbList li {
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	padding: 0;
+	text-indent: 15px;
+}
+.listPoint {
+	background: url("../images/point.gif") no-repeat scroll 5px 50% transparent;
+}
+.list_time {
+	color: #969696;
+	width: 80px;
+}
+.title {
+	background: #a4cbf1 url(http://www.chinapesticide.org.cn/r/cms/www/default/images/btn_down.png) no-repeat left center;
+	padding-left: 10px;
+	color: #224364;
+	font-weight: bold;
+}
+.box2_custom {
+	border: 1px solid #ccc;
+	width: 467px;
+}
+.dbList {
+	padding: 8px;
+}
+.jstp_z2 {
+	height: 220px;
+	overflow: hidden;
+	width: 923px;
+	margin-left: 10px;
+	padding-top: 10px
+}
+.mainH2_z2 {
+	height: 28px;
+	line-height: 28px;
+	overflow: hidden;
+}
+.jstp_z2 H2 SPAN {
+	color: #0A4DA4;
+	margin-left: 28px;
+	font-size: 14px;
+}
+.LTBg04_z2 {
+	background: url("http://www.chinapesticide.org.cn/r/cms/www/default/images/5.gif") no-repeat scroll 8px center #C7DAEB;
+	width: 922px;
+}
+.gfLeft_zz2 {
+	float: left;
+	width: 456px;
+}
+.nb {
+	background: url(../images/tou_bj.png) repeat-x;
+	height: 38px;
+}
+.toub {
+	width: 1000px;
+}
+.tou_l {
+	float: right;
+	width:580px;
+	height:38px;
+}
+.sh {
+	background: url(../images/sh.png) no-repeat;
+	width: 18px;
+	height: 18px;
+	margin-top: 4px;
+	float: left;
+}
+.sh p {
+	float: left;
+}
+.fhui {
+	background: url(../images/fhui.png) no-repeat;
+	margin-left: 15px;
+	padding-left: 20px;
+	float: left;
+}
+.yx {
+	background: url(../images/yx.png) no-repeat;
+	margin-left: 15px;
+	padding-left: 20px;
+	float: left;
+}
+.tou {
+	width: 1000px;
+	margin: 0 auto;
+}
+.tou_r {
+ float: left right: 0px;
+}
+.tou_r a {
+	color: #666;
+}
+.wjlx {
+	float: right;
+	margin-top: 70px;
+	margin-right: 20px;
+}
+/*11-23*/
+
+
+
+.gonggao {
+	height: 30px;
+	float:left;
+	width:920px;
+}
+.gonggao_List {
+	clear: both;
+	margin: 0 auto;
+	
+	width: 750px;
+}
+.gonggao_line {
+	padding-left: 10px;
+	line-height: 22px;
+	margin-bottom: 5px;
+	font-size:18px;
+	FONT-FAMILY:"微软雅黑";
+	height:18px;
+}
+.gonggao_line p {
+	text-align: right;
+	color: #666;
+}
+.rdht_z mt10_z {
+}
+.zhuantlm {
+	OVERFLOW: hidden;
+	WIDTH: 1000px;
+	HEIGHT: 106px;
+	background: #fff;
+	margin-top: 40px;
+}
+.zhuantlm_tou {
+	WIDTH: 40px;
+	HEIGHT: 106px;
+	float: left;
+	background: url(../images/ztlmt.png)
+}
+.zhuantlm_tou1 {
+	WIDTH: 952px;
+	HEIGHT: 106px;
+	float: right;
+	margin-right: 0px;
+}
+.lianj {
+	OVERFLOW: hidden;
+	WIDTH: 1000px;
+	HEIGHT: 70px;
+	background: #fff;
+	margin-top: 40px;
+	margin-bottom:40px;
+}
+.lianj1 {
+	WIDTH: 40px;
+	HEIGHT: 70px;
+	float: left;
+	background: url(../images/lj.png) no-repeat;
+	padding-right: 10px;
+}
+.lianj2 {
+	WIDTH: 164px;
+	HEIGHT: 70px;
+	float: left;
+	margin-right:10px;
+}
+.lianj2 a{
+	WIDTH: 164px;
+	HEIGHT: 70px;
+	float: left;
+	margin-right:10px;
+	background: url(../images/zg.jpg) no-repeat;
+}
+.lianj2t {
+	WIDTH:400px;
+	HEIGHT: 70px;
+	float: left;
+	margin-right:10px;
+	}
+.lianj2t a{
+	WIDTH:400px;
+	HEIGHT: 70px;
+	float: left;
+	margin-right:10px;
+	background: url(../images/zg2.jpg) no-repeat;
+}
+.lianj3 {
+	HEIGHT: 70px;
+	float: left;
+	line-height:35px;
+	font: 微软雅黑;
+	font-size: 16px;
+}
+.lianj4 {
+	WIDTH: 56px;
+	HEIGHT: 70px;
+	float: right;
+	background: url(../images/erwm.jpg) no-repeat;
+}
+.sanh {
+	height: 380px;
+	width: 1000px;
+	overflow: hidden;
+	margin-top: 40px;
+}
+.sih {
+	height: 300px;
+	width: 1000px;
+	overflow: hidden;
+	margin-top: 40px;
+}
+.sih_l {
+	width: 478px;
+	overflow: hidden;
+	height: 500px;
+	float: left;
+}
+.sih_r {
+	width: 478px;
+	overflow: hidden;
+	height: 500px;
+	float: right;
+}
+.txt-zy {
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 16px;
+	COLOR: #666;
+	LINE-HEIGHT: 24px;
+	TEXT-DECORATION: none;
+}
+.txt-zy p {
+	padding-top: 20px;
+}
+.sanh_l_tou {
+	width: 478px;
+	height: 40px;
+	background: url(../images/sanh_tou_bj.jpg) repeat-x;
+	font-size: 13px;
+	color: #ffffff;
+	font-weight: bold;
+}
+.sanh_r_tou {
+	width: 478px;
+	height: 40px;
+	background: url(../images/sanh_tou_bj.jpg) repeat-x;
+	font-size: 13px;
+	color: #ffffff;
+	font-weight: bold;
+}
+.erh_l_tou {
+	width: 478px;
+	height:35px;
+	background: url(../images/erh_tou_bj.jpg) repeat-x;
+	font-size: 13px;
+	color: #ffffff;
+	font-weight: bold;
+}
+.sanh_l_top {
+	width: 478px;
+	height: 55px;
+	background: url(../images/sanh_top_bj.jpg) repeat-x;
+	FONT-FAMILY:"微软雅黑";
+}
+.sanh_l_b {
+	padding-top: 10px;
+}
+.sanh_r_tou {
+	width: 478px;
+	height: 40px;
+}
+.sanh_r_top {
+	width: 478px;
+	height: 100px;
+	margin-top: 20px;
+}
+.sanh_r_b {
+	padding-top:10px;
+}
+.sanh_r_b img {
+	padding-top:10px;
+}
+.sanh_l_top_w {
+}
+.ruk {
+	text-align: center;
+	float: left;
+	color: #ffffff;
+}
+.ruk p {
+	color: #6894cc;
+	font-weight: bold;
+	font: 微软雅黑;
+	font-size: 16px;
+}
+.ruk_tub {
+	float: left;
+	width: 108px;
+	height: 100px;
+}
+.ruk_tub_s {
+	float: left;
+	width: 108px;
+	height: 100px;
+	background: url(../images/btn01.jpg);
+	line-height: 150px;
+	margin: 0px 5px 16px 5px;
+}
+.ruk_tub_sh {
+	float: left;
+	width: 108px;
+	height: 100px;
+	background: url(../images/btn02.jpg);
+	line-height: 150px;
+	margin: 0px 5px 16px 5px;
+}
+.ruk_tub_c {
+	float: left;
+	width: 108px;
+	height: 100px;
+	background: url(../images/btn03.jpg);
+	line-height: 150px;
+	margin: 0px 5px 16px 5px;
+}
+.ruk_tub_l {
+	float: left;
+	width: 108px;
+	height: 100px;
+	background: url(../images/btn06.jpg);
+	line-height: 150px;
+	margin: 0px 5px 16px 5px;
+}
+.xtub {
+	height: 72px;
+	width:110px;
+	line-height: 36px;
+	margin: 0px 4px 66px 4px;
+	color: #000;
+	float: left;
+	font: 微软雅黑;
+	font-size: 16px;
+	font-weight:bold;
+}
+.xtub img{ margin:0 auto;}
+.xtub p {
+	color: #333;
+}
+.mnue a {
+	width: 125px;
+	height: 57px;
+	display: block;
+	float: left;
+	line-height: 57px;
+}
+.mnue a:hover {
+	background: url(../images/nav_bj_hover.png) no-repeat;
+	width: 125px;
+	height: 57px;
+	display: block;
+}
+#mnue_h {
+	background: url(../images/nav_bj_hover.png) no-repeat;
+	width: 125px;
+	height: 57px;
+	color: #1a59a9;
+}
+.erh_r_t .sanh_l_tou {
+	height: 55px;
+	float: left;
+	width: 478px;
+}
+.erh_r_t_l {
+	background: url(../images/xwdt.png) no-repeat;
+	width: 138px;
+	height:30px;
+	float: left;
+ margin-bottom::10px;
+}
+.erh_r_t_r {
+	float: right;
+	background: url(../images/sanh_top_bj.jpg) repeat-x;
+	FONT-FAMILY:"微软雅黑";
+}
+.mnueer a {
+	width: 80px;
+	height: 55px;
+	display: block;
+	float: left;
+	line-height: 55px;
+	font-size: 13px;
+	border-top: 3px #ffffff solid;
+}
+.mnueer a:hover {
+	border-top: 3px #1a59a9 solid;
+	width: 80px;
+	height: 55px;
+	display: block;
+	font-size: 13px;
+}
+#mnueer_h {
+	border-top: 3px #1a59a9 solid;
+	width: 80px;
+	height: 55px;
+	color: #1a59a9;
+	float: left;
+	font:微软雅黑;
+}
+.riq {
+	color: #b1b1b1;
+	font: 微软雅黑;
+	font-size: 16px;
+	float:right;
+}
+.gduoys {
+	background: url(../images/gduoys.png) no-repeat;
+	width: 24px;
+	height: 30px;
+	cursor: pointer;
+}
+.mnuesan a {
+	height: 55px;
+	display: block;
+	float: left;
+	line-height: 55px;
+	font-size: 13px;
+	padding: 0 5px;
+	color: #000;
+}
+.mnuesan a:hover {
+	height: 55px;
+	display: block;
+	font-size: 13px;
+	padding: 0 5px;
+}
+#mnuesan_h {
+	width: 100px;
+	height: 55px;
+	color: #000;
+	float: left;
+	padding: 0 5px;
+}
+#mnuesan_h2 {
+	width: 30px;
+	height: 55px;
+	color: #1a59a9;
+	float: left;
+	padding:0 5px 0 15px;
+}
+#mnuesan_h2j {
+	height: 55px;
+	color: #1a59a9;
+	float: left;
+	padding:0 5px 0 15px;
+}
+.xcys {
+	width: 24px;
+	height: 55px;
+	float: left;
+	cursor: pointer;
+}
+.yaojjl {
+	padding-top: 10px;
+	FONT-FAMILY:"微软雅黑";
+}
+.sih_l_b_h td {
+	border: #daeafe 1px solid;
+	color: #0f9bd9;
+}
+.sih_l_b_h {
+	margin-top: 10px;
+	float: left;
+}
+.imglo {
+	position:absolute;
+	width:54px;
+	height:66px;
+	padding-left:100px;
+	padding-top:0px;
+}
+.dbxb {
+	padding-right:5px;
+}
+.bigNews_z tr {
+	background: url(../images/line_bg.png) repeat-x bottom;
+}
+.tabCon ul li a:link, .tabCon ul li a:hover {
+	background: url("../images/img10.gif") no-repeat scroll left center transparent;
+	padding-left: 10px;
+	font-size: 16px;
+}
+A {
+	COLOR: #224364;
+	TEXT-DECORATION: none;
+}
+A {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	BORDER-TOP-STYLE: none;
+	PADDING-TOP: 0px;
+	BORDER-RIGHT-STYLE: none;
+	BORDER-LEFT-STYLE: none;
+	BORDER-BOTTOM-STYLE: none;
+}
+A {
+	COLOR: #0d4077;
+	TEXT-DECORATION: none;
+}
+#xqrl {
+	width:330px;
+	float:left;
+	font:微软雅黑;
+}
+#gdgd {
+	float: right;
+	width:80px;
+	height:30px;
+	line-height:30px;
+}
+#gdgd a {
+	color:#3eb9ff;
+	float: left;
+	font: 微软雅黑;
+	font-size: 16px;
+}
+#gdgd a:hover {
+	color:#ff0000;
+	font: 微软雅黑;
+	font-size: 16px;
+}
+.sank {
+	margin-top:10px;
+}
+.btlzt {
+	font: 微软雅黑;
+	font-size: 24px;
+	font-weight:bold;
+}
+.sih_l_b_h_k a {
+	font: 微软雅黑;
+	font-size: 12px;
+}
